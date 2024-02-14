@@ -2,9 +2,23 @@
 
 <div id="test" class="card">test area</div>
 <div id="target"></div>
-
+<!-- <div style="border: 1px solid #CCC; width: 102px; height: 102px">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" id="grid-background-target">
+        <line x1="0" y1="0" x2="100" y2="100" stroke="#DDD" />
+        <line x1="100" y1="0" x2="0" y2="100" stroke="#DDD" />
+        <line x1="50" y1="0" x2="50" y2="100" stroke="#DDD" />
+        <line x1="0" y1="50" x2="100" y2="50" stroke="#DDD" />
+    </svg>
+</div> -->
 
 <script>
+
+
+// var grid_data = `<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' class='grid-color'  id='grid-background-target'><g id="char_grid"><line x1='0' y1='0' x2='100%' y2='100%' stroke='var(--surface1)' /><line x1='100%' y1='0' x2='0' y2='100%' stroke='var(--surface1)' /><line x1='50%' y1='0' x2='50%' y2='100%' stroke='var(--surface1)' /><line x1='0' y1='50%' x2='100%' y2='50%' stroke='var(--surface1)' /></g></svg>`;
+// var span = document.createElement('span');
+// span.innerHTML = grid_data;
+
+
 let hanziCharacters = document.getElementById('hanzi').innerHTML;
 if (hanziCharacters == "") hanziCharacters = "我"; // default to wo if the card's  <div id="hanzi" style="display:none"> is empty
 
