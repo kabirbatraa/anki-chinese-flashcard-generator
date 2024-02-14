@@ -14,7 +14,7 @@
 <!-- dependent of the flashcard -->
 <!-- <script src= "我.js"></script>  -->
 <script src= "我.js" type="text/javascript"></script>
-<!-- <script src="_hanziWriter.js"></script> -->
+<script src="_hanziWriter.js"></script>
 
 <script>
 
@@ -30,24 +30,26 @@ if (hanziCharacters == "") hanziCharacters = "我"; // default to wo if the card
     
 // from 我.js
 let importedCharacterJsonData = JSON.parse(JSON.stringify(characterJsonData))
+// let importedCharacterJsonData = characterJsonData;
+
 document.getElementById('test').innerHTML = hanziCharacters;
 
-// var characters = hanziCharacters.split("")
-// for (x of characters) {
-//     var writer = HanziWriter.create('target', x, {
-//         charDataLoader: function() {
-//             return importedCharacterJsonData;
-//         },
-//         width: 70,
-//         height: 70,
-//         padding: 5,   
-//         showOutline: true,
-//         strokeAnimationSpeed: 1, 
-//         delayBetweenStrokes: 150, // milliseconds
-//         radicalColor: '#337ab7' // blue
-//     });
-//     writer.loopCharacterAnimation();
-// };
+var characters = hanziCharacters.split("")
+for (x of characters) {
+    var writer = HanziWriter.create('target', x, {
+        charDataLoader: function() {
+            return importedCharacterJsonData;
+        },
+        width: 70,
+        height: 70,
+        padding: 5,   
+        showOutline: true,
+        strokeAnimationSpeed: 1, 
+        delayBetweenStrokes: 150, // milliseconds
+        radicalColor: '#337ab7' // blue
+    });
+    writer.loopCharacterAnimation();
+};
 
 
 // var characters = hanziCharacters.split("")
