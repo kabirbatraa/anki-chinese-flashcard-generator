@@ -35,7 +35,7 @@ if (hanziCharacters == "") hanziCharacters = "我"; // default to wo if the card
     
 // from 我.js
 // let importedCharacterJsonData = JSON.parse(JSON.stringify(characterJsonData))
-let importedCharacterJsonData = JSON.parse(JSON.stringify(allCharacters))
+let allCharactersData = JSON.parse(JSON.stringify(allCharacters))
 // let importedCharacterJsonData = characterJsonData;
 
 document.getElementById('test').innerHTML = hanziCharacters;
@@ -44,7 +44,7 @@ var characters = hanziCharacters.split("")
 for (x of characters) {
     var writer = HanziWriter.create('target', x, {
         charDataLoader: function() {
-            return importedCharacterJsonData;
+            return allCharactersData[x];
         },
         width: 70,
         height: 70,
