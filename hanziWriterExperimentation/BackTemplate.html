@@ -4,7 +4,7 @@
 
 {{Back}}
 
-<div id="test" class="card">test area</div>
+<div id="test" class="card">template failed to read hanzi</div>
 <div id="target"></div>
 <!-- <div style="border: 1px solid #CCC; width: 102px; height: 102px">
     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" id="grid-background-target">
@@ -39,8 +39,8 @@
 
 let hanziCharacters = document.getElementById('hanzi').innerHTML;
 if (hanziCharacters == "") hanziCharacters = "我"; // default to wo if the card's <div id="hanzi" style="display:none"> is empty
-    hanziCharacters = "我"; // hardcode for testing
-document.getElementById('test').innerHTML = hanziCharacters;
+    // hanziCharacters = "我"; // hardcode for testing
+document.getElementById('test').innerHTML = hanziCharacters + " were read by template";
     
     
 // from 我.js
@@ -49,20 +49,37 @@ document.getElementById('test').innerHTML = hanziCharacters;
 // let importedCharacterJsonData = characterJsonData;
 
 let scriptsLoaded = 0;
+let totalScripts = hanziCharacters.length;
 // let characterData = {}
 
 // this code should load "我.js" in runtime
-var newScript = document.createElement("script");
-newScript.type = "text/javascript";
-newScript.src = "我.js";
-newScript.onload = () => {
-    scriptsLoaded += 1
-    // if (scriptsLoaded == hanziCharacters.length) {
-    //     drawCharacters()
-    // }
-    drawCharacters()
+// var newScript = document.createElement("script");
+// newScript.type = "text/javascript";
+// newScript.src = "我.js";
+// newScript.onload = () => {
+//     scriptsLoaded += 1
+//     // if (scriptsLoaded == hanziCharacters.length) {
+//     //     drawCharacters()
+//     // }
+//     drawCharacters()
+// }
+// document.body.appendChild(newScript);
+
+// create a new script for each character
+// once the last character's script has been loaded, call drawCharacters()
+for (let character of hanziCharacters) {
+    var newScript = document.createElement("script");
+    newScript.type = "text/javascript";
+    newScript.src = "stroke_data_" + character + ".js";
+    newScript.onload = () => {
+        scriptsLoaded += 1
+        if (scriptsLoaded == totalScripts) {
+            drawCharacters()
+        }
+    }
+    document.body.appendChild(newScript);
 }
-document.body.appendChild(newScript);
+
 
 // drawCharacters();
 
