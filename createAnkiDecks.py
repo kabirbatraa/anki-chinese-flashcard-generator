@@ -168,7 +168,7 @@ for line in vocabListFile:
         # <img src="我.js" style="display:none">
             # for each hanzi
 
-        back += f'<div id="hanzi" style="display:none">{hanzi}</div>'
+        back += f'<div id="hanzi" style="display:none">{hanzi.replace("（", "").replace("）", "")}</div>'
         for character in hanzi:
             back += f'<img src="{character}.js" style="display:none">'
             downloadStrokeData(character)
