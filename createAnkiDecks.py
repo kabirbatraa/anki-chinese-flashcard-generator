@@ -35,14 +35,20 @@ vocabListFileName = "L8 Vocab List.txt"
 import requests
 
 def downloadStrokeData(character = "我"):
-
-    # TODO: convert these bytes into a string, and prepend "characterData["我"] = "
-    # then, save it as a .js file
+    if character in "（）":
+        # skip because its just a parenthesis
+        return
 
     url = f"https://cdn.jsdelivr.net/npm/hanzi-writer-data@latest/{character}.json"
     response = requests.get(url)
     jsonData = response.content
-    with open(f'jsonStrokeData/stroke_data_{character}.json', 'wb') as f:
+    # with open(f'jsonStrokeData/stroke_data_{character}.json', 'wb') as f:
+    #     f.write(jsonData)
+    
+    with open(f'jsonStrokeData/stroke_data_{character}.js', 'wb') as f:
+        jsonData = jsonData.decode()
+        jsonData = f'characterData["{character}"] = ' + jsonData
+        jsonData = jsonData.encode()
         f.write(jsonData)
 
 
