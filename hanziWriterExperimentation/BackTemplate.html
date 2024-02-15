@@ -25,7 +25,7 @@
 <script src="_hanziWriter.js"></script>
 
 <script>
-    let characterData = {}
+    var characterData = {}
 </script>
 
 <!-- load this script dynamically -->
@@ -37,7 +37,7 @@
 // var span = document.createElement('span');
 // span.innerHTML = grid_data;
 
-let hanziCharacters = document.getElementById('hanzi').innerHTML;
+var hanziCharacters = document.getElementById('hanzi').innerHTML;
 if (hanziCharacters == "") hanziCharacters = "我"; // default to wo if the card's <div id="hanzi" style="display:none"> is empty
     // hanziCharacters = "我"; // hardcode for testing
 
@@ -51,8 +51,8 @@ document.getElementById('test').style.display = "none";
 // let allCharactersData = JSON.parse(JSON.stringify(allCharacters))
 // let importedCharacterJsonData = characterJsonData;
 
-let scriptsLoaded = 0;
-let totalScripts = hanziCharacters.length;
+var scriptsLoaded = 0;
+var totalScripts = hanziCharacters.length;
 // let characterData = {}
 
 // this code should load "我.js" in runtime
@@ -70,7 +70,7 @@ let totalScripts = hanziCharacters.length;
 
 // create a new script for each character
 // once the last character's script has been loaded, call drawCharacters()
-for (let character of hanziCharacters) {
+for (var character of hanziCharacters) {
     var newScript = document.createElement("script");
     newScript.type = "text/javascript";
     newScript.src = "stroke_data_" + character + ".js";
