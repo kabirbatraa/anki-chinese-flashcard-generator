@@ -1,23 +1,23 @@
-at, in, on <br>(phrases: wait for me here, study in the dorm, where);在 zài <br>(phrases: 在这儿等我，在宿舍学习，在哪儿)
-to register (in a hospital) <br>(phrases: register for you, register for a number at the hospital);挂号 guàhào <br>(phrases: 给你挂号，在医院挂号)
-to hang something up, to register for a number in a hospital <br>(phrases: register for what department, register for a number);挂 guà <br>(phrases: 挂什么号，挂一个号)
-department (in a hospital, in a company) <br>(phrases: what department, department of internal medicine, surgical department);科 kē <br>(phrases: 什么科，内科，外科)
-department of internal medicine <br>(phrases: department of internal medicine, a doctor at department of internal medicine);内科 nèikē <br>(phrases: 看内科，内科医生)
-inside, internal, similar but slightly more formal than 里 <br>(phrases: inside the office building, inside the hospital);内 nèi <br>(phrases: 办公楼内，医院内)
-a floor of (building) <br>(phrases: a floor (of a building), the tenth floor);层 céng <br>(phrases: 一层楼，十层)
-the whole body <br>(phrases: whole body feels unwell, whole body hurts);全身 quánshēn <br>(phrases: 全身都不舒服，全身疼)
-whole <br>(phrases: whole school, whole class, whole family, whole nation);全 quán <br>(phrases: 全校，全班，全家，全国)
-to measure <br>(phrases: to measure clothes, to measure body temperature);量 liáng <br>(phrases: 量衣服，量体温)
-body temperature <br>(phrases: to measure body temperature, body temperature is a little high);体温 tǐwēn <br>(phrases: 量体温，体温有点高)
-(a form of address, more colloquial than 医生) doctor <br>(phrases: Doctor Wang, a doctor in the department of internal medicine);大夫 dàifu <br>(phrases: 王大夫，内科大夫)
-degree <br>(phrases: body temperature is 37 degrees, 38.4 degrees, how many degrees, how many degrees is today’s temperature, temperature);度 dù <br>(phrases: 体温37度，38度4，多少度，今天几度，温度)
-inflamed <br>(phrases: throat is inflamed, a little inflamed);发炎 fāyán <br>(phrases: 嗓子发炎，有点儿发炎)
-to test blook <br>(phrases: to take a blood test);验血 yànxiě <br>(phrases: 验一下血)
-blood <br>(phrases: to bleed);血 xiě <br>(phrases: 出血)
-to give an injection <br>(phrases: don’t want to get an injection, do you want to get an injection);打针 dǎzhēn <br>(phrases: 不想打针，你要不要打针)
-injection, needle <br>(phrases: get an injection, needle);针 zhēn <br>(phrases: 打一针，针头)
-no need to <br>(phrases: no need to take medicine, no need to get an injection);不用 búyòng <br>(phrases: 不用吃药，不用打针)
-water <br>(phrases: drink water, drink cold water);水 shuǐ <br>(phrases: 喝水，喝冷水)
-to rest <br>(phrases: to take a little rest, rest more, to rest for a while, no need to rest);休息 xiūxi <br>(phrases: 休息一下，多休息，休息一会儿，不用休息)
-traditional Chinese medicine <br>(phrases: take traditional Chinese medicine, to drink traditional Chinese medicine);中药 zhōngyào <br>(phrases: 吃中药，喝中药)
-medicine <br>(phrases: to take medication, to take a little medicine, drugstore, western medicine);药 yào <br>(phrases: 吃药，吃点儿药，买药，药房，西药)
+at, in, on<br>(phrases: wait for me here, study in the dorm, where);在 zài<br>(phrases: 在这儿等我，在宿舍学习，在哪儿)<br><img src="apple.jpg">
+to register (in a hospital)<br>(phrases: register for you, register for a number at the hospital);挂号 guàhào<br>(phrases: 给你挂号，在医院挂号)<br><img src="apple.jpg">
+to hang something up, to register for a number in a hospital<br>(phrases: register for what department, register for a number);挂 guà<br>(phrases: 挂什么号，挂一个号)<br><img src="apple.jpg">
+department (in a hospital, in a company)<br>(phrases: what department, department of internal medicine, surgical department);科 kē<br>(phrases: 什么科，内科，外科)<br><img src="apple.jpg">
+department of internal medicine<br>(phrases: department of internal medicine, a doctor at department of internal medicine);内科 nèikē<br>(phrases: 看内科，内科医生)<br><img src="apple.jpg">
+inside, internal, similar but slightly more formal than 里<br>(phrases: inside the office building, inside the hospital);内 nèi<br>(phrases: 办公楼内，医院内)<br><img src="apple.jpg">
+a floor of (building)<br>(phrases: a floor (of a building), the tenth floor);层 céng<br>(phrases: 一层楼，十层)<br><img src="apple.jpg">
+the whole body<br>(phrases: whole body feels unwell, whole body hurts);全身 quánshēn<br>(phrases: 全身都不舒服，全身疼)<br><img src="apple.jpg">
+whole<br>(phrases: whole school, whole class, whole family, whole nation);全 quán<br>(phrases: 全校，全班，全家，全国)<br><img src="apple.jpg">
+to measure<br>(phrases: to measure clothes, to measure body temperature);量 liáng<br>(phrases: 量衣服，量体温)<br><img src="apple.jpg">
+body temperature<br>(phrases: to measure body temperature, body temperature is a little high);体温 tǐwēn<br>(phrases: 量体温，体温有点高)<br><img src="apple.jpg">
+(a form of address, more colloquial than 医生) doctor<br>(phrases: Doctor Wang, a doctor in the department of internal medicine);大夫 dàifu<br>(phrases: 王大夫，内科大夫)<br><img src="apple.jpg">
+degree<br>(phrases: body temperature is 37 degrees, 38.4 degrees, how many degrees, how many degrees is today’s temperature, temperature);度 dù<br>(phrases: 体温37度，38度4，多少度，今天几度，温度)<br><img src="apple.jpg">
+inflamed<br>(phrases: throat is inflamed, a little inflamed);发炎 fāyán<br>(phrases: 嗓子发炎，有点儿发炎)<br><img src="apple.jpg">
+to test blook<br>(phrases: to take a blood test);验血 yànxiě<br>(phrases: 验一下血)<br><img src="apple.jpg">
+blood<br>(phrases: to bleed);血 xiě<br>(phrases: 出血)<br><img src="apple.jpg">
+to give an injection<br>(phrases: don’t want to get an injection, do you want to get an injection);打针 dǎzhēn<br>(phrases: 不想打针，你要不要打针)<br><img src="apple.jpg">
+injection, needle<br>(phrases: get an injection, needle);针 zhēn<br>(phrases: 打一针，针头)<br><img src="apple.jpg">
+no need to<br>(phrases: no need to take medicine, no need to get an injection);不用 búyòng<br>(phrases: 不用吃药，不用打针)<br><img src="apple.jpg">
+water<br>(phrases: drink water, drink cold water);水 shuǐ<br>(phrases: 喝水，喝冷水)<br><img src="apple.jpg">
+to rest<br>(phrases: to take a little rest, rest more, to rest for a while, no need to rest);休息 xiūxi<br>(phrases: 休息一下，多休息，休息一会儿，不用休息)<br><img src="apple.jpg">
+traditional Chinese medicine<br>(phrases: take traditional Chinese medicine, to drink traditional Chinese medicine);中药 zhōngyào<br>(phrases: 吃中药，喝中药)<br><img src="apple.jpg">
+medicine<br>(phrases: to take medication, to take a little medicine, drugstore, western medicine);药 yào<br>(phrases: 吃药，吃点儿药，买药，药房，西药)<br><img src="apple.jpg">

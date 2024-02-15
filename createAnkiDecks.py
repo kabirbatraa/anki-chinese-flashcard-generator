@@ -2,6 +2,36 @@
 # Example: vocabListFileName = "Lesson 1.txt"
 vocabListFileName = "L8 Vocab List.txt"
 
+
+
+# if beautifulsoup4 or requests don't exist, then 
+# use the command: pip install beautifulsoup4, or pip install requests 
+# import requests
+# from bs4 import BeautifulSoup
+
+# url = "http://www.strokeorder.info/mandarin.php?q=我"
+# url = url.encode('utf-8')
+# print(url)
+# response = requests.get(url)
+# html_content = response.content
+
+# print(html_content)
+
+# soup = BeautifulSoup(html_content, "html.parser")
+# img_tags = soup.find_all("img")
+
+# image_urls = []
+# for img_tag in img_tags:
+#     image_url = img_tag.get("src")
+#     if image_url:
+#         image_urls.append(image_url)
+
+# for image_url in image_urls:
+#     image_response = requests.get(image_url)
+#     with open(f"image_{image_urls.index(image_url)}.jpg", "wb") as f:
+#         f.write(image_response.content)
+
+
 vocabListFile = open(vocabListFileName, "r", encoding="utf8") # "r" means read
 # print(file.read())
 
@@ -50,20 +80,30 @@ for line in vocabListFile:
     vocabTerm = lineParts
 
     
-
+    print(vocabTerm)
     hanzi = vocabTerm[0]
     pinyin = vocabTerm[1]
     definition = vocabTerm[2]
+    examplesExist = True
     if (len(vocabTerm) == 5):
         exampleChinese = vocabTerm[3]
         exampleEnglish = vocabTerm[4] # chinese example translated into english
+        # examplesExist = True
     else:
+        examplesExist = False
         print("this term does not have examples")
-    print(vocabTerm)
-    print("hanzi:", hanzi)
-    print("pinyin:", pinyin)
-    # print(lineParts)
+    # print("hanzi:", hanzi)
+    # print("pinyin:", pinyin)
 
+
+    # get the image associated with each hanzi character
+    hanziGifImageTags = []
+
+    firstCharacter = hanzi[0]
+
+
+
+    hanziGifImageTags.append('<img src="apple.jpg">')
 
     # now write the vocab term to the file
 
@@ -71,8 +111,14 @@ for line in vocabListFile:
     if ankiDeckFile == None:
         ankiDeckFile = open("NoDeckName.txt", 'w', encoding="utf8")
     
-    front = f"{definition} <br>(phrases: {exampleEnglish})"
-    back = f"{hanzi} {pinyin} <br>(phrases: {exampleChinese})"
+    front = f"{definition}"
+    if examplesExist: front += f"<br>(phrases: {exampleEnglish})"
+    back = f"{hanzi} {pinyin}"
+    if examplesExist: back += f"<br>(phrases: {exampleChinese})"
+    back += "<br>"
+    for imageTag in hanziGifImageTags:
+        back += f'{imageTag}'
+    
     ankiDeckFile.write(front + ";" + back + "\n")
 
 
