@@ -34,14 +34,19 @@ vocabListFileName = "L8 Vocab List.txt"
 
 import requests
 
-character = "我"
-url = f"https://cdn.jsdelivr.net/npm/hanzi-writer-data@latest/{character}.json"
-response = requests.get(url)
-jsonData = response.content
-with open(f'jsonStrokeData/stroke_data_{character}.json', 'wb') as f:
-    f.write(jsonData)
+def downloadStrokeData(character = "我"):
+
+    # TODO: convert these bytes into a string, and prepend "characterData["我"] = "
+    # then, save it as a .js file
+
+    url = f"https://cdn.jsdelivr.net/npm/hanzi-writer-data@latest/{character}.json"
+    response = requests.get(url)
+    jsonData = response.content
+    with open(f'jsonStrokeData/stroke_data_{character}.json', 'wb') as f:
+        f.write(jsonData)
 
 
+    
 
 vocabListFile = open(vocabListFileName, "r", encoding="utf8") # "r" means read
 # print(file.read())
@@ -107,30 +112,65 @@ for line in vocabListFile:
     # print("pinyin:", pinyin)
 
 
-    # get the image associated with each hanzi character
-    hanziGifImageTags = []
-
-    firstCharacter = hanzi[0]
-    
-
-
-
-    hanziGifImageTags.append('<img src="apple.jpg">')
-
-    # now write the vocab term to the file
-
     # if no file was opened, then this vocab term comes before something like "Text 1" to label the deck
     if ankiDeckFile == None:
         ankiDeckFile = open("NoDeckName.txt", 'w', encoding="utf8")
+
+
+    # now write the vocab term to the file
+
+
+    # not using this right now
+    def writeToFileStrokeOrderInfoFormat():
+        # get the image associated with each hanzi character
+        hanziGifImageTags = []
+
+        firstCharacter = hanzi[0]
+        
+        # the stroke order website seems to not be working
+
+
+        hanziGifImageTags.append('<img src="apple.jpg">')
+
+
+        
+        
+        front = f"{definition}"
+        if examplesExist: front += f"<br>(phrases: {exampleEnglish})"
+        back = f"{hanzi} {pinyin}"
+        if examplesExist: back += f"<br>(phrases: {exampleChinese})"
+        back += "<br>"
+        for imageTag in hanziGifImageTags:
+            back += f'{imageTag}'
+        
+        ankiDeckFile.write(front + ";" + back + "\n")
     
-    front = f"{definition}"
-    if examplesExist: front += f"<br>(phrases: {exampleEnglish})"
-    back = f"{hanzi} {pinyin}"
-    if examplesExist: back += f"<br>(phrases: {exampleChinese})"
-    back += "<br>"
-    for imageTag in hanziGifImageTags:
-        back += f'{imageTag}'
-    
-    ankiDeckFile.write(front + ";" + back + "\n")
+
+
+    # format for hanzi writer + my template
+    def writeToFileHanziWriterFormat():
+
+        front = f"{definition}"
+        if examplesExist: front += f"<br>(phrases: {exampleEnglish})"
+
+        back = f"{hanzi} {pinyin}"
+        if examplesExist: back += f"<br>(phrases: {exampleChinese})"
+        back += "<br>"
+
+        # format for the back side:
+        # <div id="hanzi" style="display:none">我是钢琴</div>
+        # <img src="我.js" style="display:none">
+            # for each hanzi
+
+        back += f'<div id="hanzi" style="display:none">{hanzi}</div><br>'
+        for character in hanzi:
+            back += f'<img src="{character}.js" style="display:none"><br>'
+            downloadStrokeData(character)
+        
+        ankiDeckFile.write(front + ";" + back + "\n")
+
+
+    writeToFileHanziWriterFormat()
+
 
 

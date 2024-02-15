@@ -1,23 +1,23 @@
-at, in, on<br>(phrases: wait for me here, study in the dorm, where);在 zài<br>(phrases: 在这儿等我，在宿舍学习，在哪儿)<br><img src="apple.jpg">
-to register (in a hospital)<br>(phrases: register for you, register for a number at the hospital);挂号 guàhào<br>(phrases: 给你挂号，在医院挂号)<br><img src="apple.jpg">
-to hang something up, to register for a number in a hospital<br>(phrases: register for what department, register for a number);挂 guà<br>(phrases: 挂什么号，挂一个号)<br><img src="apple.jpg">
-department (in a hospital, in a company)<br>(phrases: what department, department of internal medicine, surgical department);科 kē<br>(phrases: 什么科，内科，外科)<br><img src="apple.jpg">
-department of internal medicine<br>(phrases: department of internal medicine, a doctor at department of internal medicine);内科 nèikē<br>(phrases: 看内科，内科医生)<br><img src="apple.jpg">
-inside, internal, similar but slightly more formal than 里<br>(phrases: inside the office building, inside the hospital);内 nèi<br>(phrases: 办公楼内，医院内)<br><img src="apple.jpg">
-a floor of (building)<br>(phrases: a floor (of a building), the tenth floor);层 céng<br>(phrases: 一层楼，十层)<br><img src="apple.jpg">
-the whole body<br>(phrases: whole body feels unwell, whole body hurts);全身 quánshēn<br>(phrases: 全身都不舒服，全身疼)<br><img src="apple.jpg">
-whole<br>(phrases: whole school, whole class, whole family, whole nation);全 quán<br>(phrases: 全校，全班，全家，全国)<br><img src="apple.jpg">
-to measure<br>(phrases: to measure clothes, to measure body temperature);量 liáng<br>(phrases: 量衣服，量体温)<br><img src="apple.jpg">
-body temperature<br>(phrases: to measure body temperature, body temperature is a little high);体温 tǐwēn<br>(phrases: 量体温，体温有点高)<br><img src="apple.jpg">
-(a form of address, more colloquial than 医生) doctor<br>(phrases: Doctor Wang, a doctor in the department of internal medicine);大夫 dàifu<br>(phrases: 王大夫，内科大夫)<br><img src="apple.jpg">
-degree<br>(phrases: body temperature is 37 degrees, 38.4 degrees, how many degrees, how many degrees is today’s temperature, temperature);度 dù<br>(phrases: 体温37度，38度4，多少度，今天几度，温度)<br><img src="apple.jpg">
-inflamed<br>(phrases: throat is inflamed, a little inflamed);发炎 fāyán<br>(phrases: 嗓子发炎，有点儿发炎)<br><img src="apple.jpg">
-to test blook<br>(phrases: to take a blood test);验血 yànxiě<br>(phrases: 验一下血)<br><img src="apple.jpg">
-blood<br>(phrases: to bleed);血 xiě<br>(phrases: 出血)<br><img src="apple.jpg">
-to give an injection<br>(phrases: don’t want to get an injection, do you want to get an injection);打针 dǎzhēn<br>(phrases: 不想打针，你要不要打针)<br><img src="apple.jpg">
-injection, needle<br>(phrases: get an injection, needle);针 zhēn<br>(phrases: 打一针，针头)<br><img src="apple.jpg">
-no need to<br>(phrases: no need to take medicine, no need to get an injection);不用 búyòng<br>(phrases: 不用吃药，不用打针)<br><img src="apple.jpg">
-water<br>(phrases: drink water, drink cold water);水 shuǐ<br>(phrases: 喝水，喝冷水)<br><img src="apple.jpg">
-to rest<br>(phrases: to take a little rest, rest more, to rest for a while, no need to rest);休息 xiūxi<br>(phrases: 休息一下，多休息，休息一会儿，不用休息)<br><img src="apple.jpg">
-traditional Chinese medicine<br>(phrases: take traditional Chinese medicine, to drink traditional Chinese medicine);中药 zhōngyào<br>(phrases: 吃中药，喝中药)<br><img src="apple.jpg">
-medicine<br>(phrases: to take medication, to take a little medicine, drugstore, western medicine);药 yào<br>(phrases: 吃药，吃点儿药，买药，药房，西药)<br><img src="apple.jpg">
+at, in, on<br>(phrases: wait for me here, study in the dorm, where);在 zài<br>(phrases: 在这儿等我，在宿舍学习，在哪儿)<br><div id="hanzi" style="display:none">在</div><br><img src="在.js" style="display:none"><br>
+to register (in a hospital)<br>(phrases: register for you, register for a number at the hospital);挂号 guàhào<br>(phrases: 给你挂号，在医院挂号)<br><div id="hanzi" style="display:none">挂号</div><br><img src="挂.js" style="display:none"><br><img src="号.js" style="display:none"><br>
+to hang something up, to register for a number in a hospital<br>(phrases: register for what department, register for a number);挂 guà<br>(phrases: 挂什么号，挂一个号)<br><div id="hanzi" style="display:none">挂</div><br><img src="挂.js" style="display:none"><br>
+department (in a hospital, in a company)<br>(phrases: what department, department of internal medicine, surgical department);科 kē<br>(phrases: 什么科，内科，外科)<br><div id="hanzi" style="display:none">科</div><br><img src="科.js" style="display:none"><br>
+department of internal medicine<br>(phrases: department of internal medicine, a doctor at department of internal medicine);内科 nèikē<br>(phrases: 看内科，内科医生)<br><div id="hanzi" style="display:none">内科</div><br><img src="内.js" style="display:none"><br><img src="科.js" style="display:none"><br>
+inside, internal, similar but slightly more formal than 里<br>(phrases: inside the office building, inside the hospital);内 nèi<br>(phrases: 办公楼内，医院内)<br><div id="hanzi" style="display:none">内</div><br><img src="内.js" style="display:none"><br>
+a floor of (building)<br>(phrases: a floor (of a building), the tenth floor);层 céng<br>(phrases: 一层楼，十层)<br><div id="hanzi" style="display:none">层</div><br><img src="层.js" style="display:none"><br>
+the whole body<br>(phrases: whole body feels unwell, whole body hurts);全身 quánshēn<br>(phrases: 全身都不舒服，全身疼)<br><div id="hanzi" style="display:none">全身</div><br><img src="全.js" style="display:none"><br><img src="身.js" style="display:none"><br>
+whole<br>(phrases: whole school, whole class, whole family, whole nation);全 quán<br>(phrases: 全校，全班，全家，全国)<br><div id="hanzi" style="display:none">全</div><br><img src="全.js" style="display:none"><br>
+to measure<br>(phrases: to measure clothes, to measure body temperature);量 liáng<br>(phrases: 量衣服，量体温)<br><div id="hanzi" style="display:none">量</div><br><img src="量.js" style="display:none"><br>
+body temperature<br>(phrases: to measure body temperature, body temperature is a little high);体温 tǐwēn<br>(phrases: 量体温，体温有点高)<br><div id="hanzi" style="display:none">体温</div><br><img src="体.js" style="display:none"><br><img src="温.js" style="display:none"><br>
+(a form of address, more colloquial than 医生) doctor<br>(phrases: Doctor Wang, a doctor in the department of internal medicine);大夫 dàifu<br>(phrases: 王大夫，内科大夫)<br><div id="hanzi" style="display:none">大夫</div><br><img src="大.js" style="display:none"><br><img src="夫.js" style="display:none"><br>
+degree<br>(phrases: body temperature is 37 degrees, 38.4 degrees, how many degrees, how many degrees is today’s temperature, temperature);度 dù<br>(phrases: 体温37度，38度4，多少度，今天几度，温度)<br><div id="hanzi" style="display:none">度</div><br><img src="度.js" style="display:none"><br>
+inflamed<br>(phrases: throat is inflamed, a little inflamed);发炎 fāyán<br>(phrases: 嗓子发炎，有点儿发炎)<br><div id="hanzi" style="display:none">发炎</div><br><img src="发.js" style="display:none"><br><img src="炎.js" style="display:none"><br>
+to test blook<br>(phrases: to take a blood test);验血 yànxiě<br>(phrases: 验一下血)<br><div id="hanzi" style="display:none">验血</div><br><img src="验.js" style="display:none"><br><img src="血.js" style="display:none"><br>
+blood<br>(phrases: to bleed);血 xiě<br>(phrases: 出血)<br><div id="hanzi" style="display:none">血</div><br><img src="血.js" style="display:none"><br>
+to give an injection<br>(phrases: don’t want to get an injection, do you want to get an injection);打针 dǎzhēn<br>(phrases: 不想打针，你要不要打针)<br><div id="hanzi" style="display:none">打针</div><br><img src="打.js" style="display:none"><br><img src="针.js" style="display:none"><br>
+injection, needle<br>(phrases: get an injection, needle);针 zhēn<br>(phrases: 打一针，针头)<br><div id="hanzi" style="display:none">针</div><br><img src="针.js" style="display:none"><br>
+no need to<br>(phrases: no need to take medicine, no need to get an injection);不用 búyòng<br>(phrases: 不用吃药，不用打针)<br><div id="hanzi" style="display:none">不用</div><br><img src="不.js" style="display:none"><br><img src="用.js" style="display:none"><br>
+water<br>(phrases: drink water, drink cold water);水 shuǐ<br>(phrases: 喝水，喝冷水)<br><div id="hanzi" style="display:none">水</div><br><img src="水.js" style="display:none"><br>
+to rest<br>(phrases: to take a little rest, rest more, to rest for a while, no need to rest);休息 xiūxi<br>(phrases: 休息一下，多休息，休息一会儿，不用休息)<br><div id="hanzi" style="display:none">休息</div><br><img src="休.js" style="display:none"><br><img src="息.js" style="display:none"><br>
+traditional Chinese medicine<br>(phrases: take traditional Chinese medicine, to drink traditional Chinese medicine);中药 zhōngyào<br>(phrases: 吃中药，喝中药)<br><div id="hanzi" style="display:none">中药</div><br><img src="中.js" style="display:none"><br><img src="药.js" style="display:none"><br>
+medicine<br>(phrases: to take medication, to take a little medicine, drugstore, western medicine);药 yào<br>(phrases: 吃药，吃点儿药，买药，药房，西药)<br><div id="hanzi" style="display:none">药</div><br><img src="药.js" style="display:none"><br>
