@@ -52,17 +52,22 @@ def downloadStrokeData(character = "我"):
         f.write(jsonData)
     
 def getStrokeData(character = "我"):
-    if character in "（）":
-        # skip because its just a parenthesis
-        return None
+    # if character in "（）":
+    #     # skip because its just a parenthesis
+    #     return None
 
     url = f"https://cdn.jsdelivr.net/npm/hanzi-writer-data@latest/{character}.json"
     response = requests.get(url)
     jsonData = response.content
     jsonData = jsonData.decode()
+
+    if "Couldn't find the requested file" in jsonData:
+        print("could not find file for " + character + "; skipping this character")
+        return None
     return jsonData
 
-    
+# test
+print("testing getStrokeData", getStrokeData("（"))
 
 vocabListFile = open(vocabListFileName, "r", encoding="utf8") # "r" means read
 # print(file.read())
