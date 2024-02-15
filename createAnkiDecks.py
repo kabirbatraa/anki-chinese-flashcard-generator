@@ -184,7 +184,7 @@ for line in vocabListFile:
             # downloadStrokeData(character)
 
             strokeJsonData = getStrokeData(character)
-            back += f'<div id="{character}">{strokeJsonData}</div>'
+            back += f'<div id="{character}" style="display:none">{strokeJsonData}</div>'
         
         ankiDeckFile.write(front + ";" + back + "\n")
 
