@@ -49,7 +49,7 @@ Text 2
 度；dù: degree；体温37度，38度4，多少度，今天几度，温度；body temperature is 37 degrees, 38.4 degrees, how many degrees, how many degrees is today’s temperature, temperature
 发炎；fāyán: inflamed；嗓子发炎，有点儿发炎；throat is inflamed, a little inflamed
 验血；yànxiě: to test blook；验一下血；to take a blood test
-血；xiě: blook；出血；to bleed
+血；xiě: blood；出血；to bleed
 打针；dǎzhēn: to give an injection；不想打针，你要不要打针；don’t want to get an injection, do you want to get an injection
 针；zhēn: injection, needle；打一针，针头；get an injection, needle
 不用；búyòng: no need to；不用吃药，不用打针；no need to take medicine, no need to get an injection

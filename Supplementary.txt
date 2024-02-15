@@ -1,0 +1,17 @@
+eye;眼睛 yǎnjing
+tooth;牙 yá
+stomach;胃 wèi
+neck;脖子 bózi
+arm;胳膊 gēbo
+waist;腰 yāo
+leg;腿 tuǐ
+to have a fever;发烧 fāshāo
+to have diarrhea;拉肚子 lā dùzi
+to have a cold;感冒 gǎnmào
+emergency;急诊 jízhěn
+surgical department;外科 wàikē
+Western medicine;西药 xīyào
+to have an X-ray exam, more commonly called 照X光;透视 tòushì
+acupuncture (and moxibustion);针灸 zhēnjiǔ
+stool, feces;大便 dàbiàn
+urine;小便 xiǎobiàn
