@@ -54,7 +54,7 @@ def downloadStrokeData(character = "我"):
 def getStrokeData(character = "我"):
     if character in "（）":
         # skip because its just a parenthesis
-        return
+        return None
 
     url = f"https://cdn.jsdelivr.net/npm/hanzi-writer-data@latest/{character}.json"
     response = requests.get(url)
@@ -180,10 +180,12 @@ for line in vocabListFile:
 
         back += f'<div id="hanzi" style="display:none">{hanzi.replace("（", "").replace("）", "")}</div>'
         for character in hanzi:
-            back += f'<img src="{character}.js" style="display:none">'
+            # no need to add the dummy image to trick anki into thinking the character js is a dependency
+            # back += f'<img src="{character}.js" style="display:none">'
             # downloadStrokeData(character)
 
             strokeJsonData = getStrokeData(character)
+            if strokeJsonData == None: continue
             back += f'<div id="{character}" style="display:none">{strokeJsonData}</div>'
         
         ankiDeckFile.write(front + ";" + back + "\n")
