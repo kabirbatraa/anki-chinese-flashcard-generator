@@ -50,7 +50,17 @@ def downloadStrokeData(character = "我"):
         jsonData = f'characterData["{character}"] = ' + jsonData
         jsonData = jsonData.encode()
         f.write(jsonData)
+    
+def getStrokeData(character = "我"):
+    if character in "（）":
+        # skip because its just a parenthesis
+        return
 
+    url = f"https://cdn.jsdelivr.net/npm/hanzi-writer-data@latest/{character}.json"
+    response = requests.get(url)
+    jsonData = response.content
+    jsonData = jsonData.decode()
+    return jsonData
 
     
 
@@ -171,7 +181,10 @@ for line in vocabListFile:
         back += f'<div id="hanzi" style="display:none">{hanzi.replace("（", "").replace("）", "")}</div>'
         for character in hanzi:
             back += f'<img src="{character}.js" style="display:none">'
-            downloadStrokeData(character)
+            # downloadStrokeData(character)
+
+            strokeJsonData = getStrokeData(character)
+            back += f'<div id="{character}">{strokeJsonData}</div>'
         
         ankiDeckFile.write(front + ";" + back + "\n")
 
