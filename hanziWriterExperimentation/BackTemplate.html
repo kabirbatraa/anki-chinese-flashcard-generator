@@ -40,7 +40,10 @@
 let hanziCharacters = document.getElementById('hanzi').innerHTML;
 if (hanziCharacters == "") hanziCharacters = "我"; // default to wo if the card's <div id="hanzi" style="display:none"> is empty
     // hanziCharacters = "我"; // hardcode for testing
-document.getElementById('test').innerHTML = hanziCharacters + " were read by template";
+
+// document.getElementById('test').innerHTML = hanziCharacters + " were read by template";
+document.getElementById('test').style.display = "none";
+// disable this element (only show if something broke)
     
     
 // from 我.js
