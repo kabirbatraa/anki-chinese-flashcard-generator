@@ -32,6 +32,17 @@ vocabListFileName = "L8 Vocab List.txt"
 #         f.write(image_response.content)
 
 
+import requests
+
+character = "我"
+url = f"https://cdn.jsdelivr.net/npm/hanzi-writer-data@latest/{character}.json"
+response = requests.get(url)
+jsonData = response.content
+with open(f'jsonStrokeData/stroke_data_{character}.json', 'wb') as f:
+    f.write(jsonData)
+
+
+
 vocabListFile = open(vocabListFileName, "r", encoding="utf8") # "r" means read
 # print(file.read())
 
@@ -80,7 +91,7 @@ for line in vocabListFile:
     vocabTerm = lineParts
 
     
-    print(vocabTerm)
+    # print(vocabTerm)
     hanzi = vocabTerm[0]
     pinyin = vocabTerm[1]
     definition = vocabTerm[2]
@@ -100,6 +111,7 @@ for line in vocabListFile:
     hanziGifImageTags = []
 
     firstCharacter = hanzi[0]
+    
 
 
 
