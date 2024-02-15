@@ -168,9 +168,9 @@ for line in vocabListFile:
         # <img src="我.js" style="display:none">
             # for each hanzi
 
-        back += f'<div id="hanzi" style="display:none">{hanzi}</div><br>'
+        back += f'<div id="hanzi" style="display:none">{hanzi}</div>'
         for character in hanzi:
-            back += f'<img src="{character}.js" style="display:none"><br>'
+            back += f'<img src="{character}.js" style="display:none">'
             downloadStrokeData(character)
         
         ankiDeckFile.write(front + ";" + back + "\n")
