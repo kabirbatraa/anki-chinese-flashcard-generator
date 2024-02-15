@@ -5,7 +5,9 @@
 {{Back}}
 
 <div id="test" class="card">template failed to read hanzi</div>
-<div id="target" style="background-color: #383838;"></div>
+<div class="outerBox">
+    <div id="hanziAnimationDiv" style="background-color: #383838;"></div>
+</div>
 <!-- <div style="border: 1px solid #CCC; width: 102px; height: 102px">
     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" id="grid-background-target">
         <line x1="0" y1="0" x2="100" y2="100" stroke="#DDD" />
@@ -104,7 +106,7 @@ function drawCharacters() {
     
     var characters = hanziCharacters.split("")
     for (x of characters) {
-        var writer = HanziWriter.create('target', x, {
+        var writer = HanziWriter.create('hanziAnimationDiv', x, {
             charDataLoader: function() {
                 return characterData[x];
             },
