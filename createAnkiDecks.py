@@ -71,6 +71,8 @@ for line in vocabListFile:
     if ankiDeckFile == None:
         ankiDeckFile = open("NoDeckName.txt", 'w', encoding="utf8")
     
-    ankiDeckFile.write(definition + ";" + hanzi + " " + pinyin + "\n")
+    front = f"{definition} <br>(phrases: {exampleEnglish})"
+    back = f"{hanzi} {pinyin} <br>(phrases: {exampleChinese})"
+    ankiDeckFile.write(front + ";" + back + "\n")
 
 

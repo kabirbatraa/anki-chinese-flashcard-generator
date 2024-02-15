@@ -1,28 +1,28 @@
-quick, quickly, hurry up;快 kuài
-to get up from bed;起床 qǐchuáng
-bed;床 chuáng
-every;每 měi
-v/n. to exercise;运动 yùndòng
-why;为什么 wèishénme
-but;可是 kěshì
-head;头 tóu
-painful, to hurt;疼 téng
-sorry;对不起 duìbuqǐ
-comfortable;舒服 shūfu
-it doesn’t matter, never mind;没关系 méi guānxì
-throat;嗓子 sǎngzi
-a little + adj., somewhat;有（一）点儿 yǒu (yì)diǎnr
-should, ought to;应该 yīnggāi
-should;该 gāi
-hospital;医院 yīyuàn
-to see a doctor;看病 kànbìng
-disease, illness;病 bìng
-body, health;身体 shēntǐ
-sleep;睡觉 shuìjiào
-to sleep;睡 shuì
-can, able to;能 néng
-to attend class;上课 shàngkè
-(used in a choice-type question) or;还是 háishì
-weather;天气 tiānqì
-cold;冷 lěng
-to wear;穿 chuān
+quick, quickly, hurry up <br>(phrases: come quickly, hurry and get up, quickly, hurry up);快 kuài <br>(phrases: 快来，快起床，很快，快点儿)
+to get up from bed <br>(phrases: hurry and get up, get up at six o’clock);起床 qǐchuáng <br>(phrases: 快起床，六点起床)
+bed <br>(phrases: a bed);床 chuáng <br>(phrases: 一张床)
+every <br>(phrases: everyday, every year, every month, every person);每 měi <br>(phrases: 每天，每年，每个月，每个人)
+v/n. to exercise <br>(phrases: everyday, every year, every month, every person);运动 yùndòng <br>(phrases: 每天，每年，每个月，每个人)
+why <br>(phrases: why still not up yet, why not go);为什么 wèishénme <br>(phrases: 为什么还不起床，为什么不去)
+but <br>(phrases: why still not up yet, why not go);可是 kěshì <br>(phrases: 为什么还不起床，为什么不去)
+head <br>(phrases: a head, headache);头 tóu <br>(phrases: 一个头，头疼)
+painful, to hurt <br>(phrases: head hurts, hurts a lot, stomach hurts, where does it hurt);疼 téng <br>(phrases: 头疼，很疼，肚子疼，哪儿疼)
+sorry <br>(phrases: really sorry);对不起 duìbuqǐ <br>(phrases: 真对不起)
+comfortable <br>(phrases: very comfortable, this shirt feels uncomfortable, my body feels unwell);舒服 shūfu <br>(phrases: 很舒服，这件衬衫不舒服，我身体不舒服)
+it doesn’t matter, never mind <br>(phrases: very comfortable, this shirt feels uncomfortable, my body feels unwell);没关系 méi guānxì <br>(phrases: 很舒服，这件衬衫不舒服，我身体不舒服)
+throat <br>(phrases: throat hurts, throat feels uncomfortable);嗓子 sǎngzi <br>(phrases: 嗓子疼，嗓子不舒服)
+a little + adj., somewhat <br>(phrases: a little tired, hurts a little, a little worried);有（一）点儿 yǒu (yì)diǎnr <br>(phrases: 有点儿累，有点儿疼，有点儿着急)
+should, ought to <br>(phrases: should study, should not drink, should have a try);应该 yīnggāi <br>(phrases: 应该学习，不应该喝酒，应该试一下)
+should <br>(phrases: shouldn’t go, words that one should say);该 gāi <br>(phrases: 不该去，该说的话)
+hospital <br>(phrases: a hospital, go to the hospital to check out an illness, at the hospital);医院 yīyuàn <br>(phrases: 一个/家医院，去医院看病，在医院)
+to see a doctor <br>(phrases: to see a doctor, to see a doctor at the hospital);看病 kànbìng <br>(phrases: 去看病，去医院看病)
+disease, illness <br>(phrases: isn’t ill, she is sick, patient);病 bìng <br>(phrases: 没有病，她生病了，病人)
+body, health <br>(phrases: I’m in good health, my body is fine, my body feels a little unwell);身体 shēntǐ <br>(phrases: 我身体很好，身体没问题，身体不太舒服)
+sleep <br>(phrases: I want to sleep, hurry and sleep, sleep at 10 o’clock everyday);睡觉 shuìjiào <br>(phrases: 我想睡觉，快去睡觉，每天十点睡觉)
+to sleep <br>(phrases: sleep for a while, take a nap);睡 shuì <br>(phrases: 睡一会儿，睡一觉)
+can, able to <br>(phrases: I can speak Chinese, afraid won’t be able to attend, can get up at 7);能 néng <br>(phrases: 我能说汉语，恐怕不能参加，能七点起床)
+to attend class <br>(phrases: I can’t come to class today, when does Chinese class start);上课 shàngkè <br>(phrases: 我今天不能来上课，中文课几点上课)
+(used in a choice-type question) or <br>(phrases: sleep or get up, drink tea or water, go now or in the afternoon);还是 háishì <br>(phrases: 睡觉还是起床，喝茶还是喝水，现在去还是下午去)
+weather <br>(phrases: what’s the weather like today, today’s weather is good);天气 tiānqì <br>(phrases: 今天天气怎么样，今天天气很好)
+cold <br>(phrases: weather is cold, water is a little cold, only wearing one shirt feels cold);冷 lěng <br>(phrases: 天气很冷，水有点儿冷，只穿一件衣服很冷)
+to wear <br>(phrases: wear clothes, put on more clothes, wear shirts, she likes to wear skirts/dresses);穿 chuān <br>(phrases: 穿衣服，多穿点衣服，穿衬衫，她喜欢穿裙子)

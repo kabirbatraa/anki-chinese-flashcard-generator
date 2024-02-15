@@ -1,17 +1,17 @@
-eye;眼睛 yǎnjing
-tooth;牙 yá
-stomach;胃 wèi
-neck;脖子 bózi
-arm;胳膊 gēbo
-waist;腰 yāo
-leg;腿 tuǐ
-to have a fever;发烧 fāshāo
-to have diarrhea;拉肚子 lā dùzi
-to have a cold;感冒 gǎnmào
-emergency;急诊 jízhěn
-surgical department;外科 wàikē
-Western medicine;西药 xīyào
-to have an X-ray exam, more commonly called 照X光;透视 tòushì
-acupuncture (and moxibustion);针灸 zhēnjiǔ
-stool, feces;大便 dàbiàn
-urine;小便 xiǎobiàn
+eye <br>(phrases: large eyes, black eyes, eyes hurt);眼睛 yǎnjing <br>(phrases: 大眼睛，黑色的眼睛，眼睛疼)
+tooth <br>(phrases: brush teeth, toothache);牙 yá <br>(phrases: 刷牙，牙疼)
+stomach <br>(phrases: stomachache, stomach feels uncomfortable);胃 wèi <br>(phrases: 胃疼，胃不舒服)
+neck <br>(phrases: neck hurts);脖子 bózi <br>(phrases: 脖子疼)
+arm <br>(phrases: left arm);胳膊 gēbo <br>(phrases: 左边的胳膊)
+waist <br>(phrases: waist hurts);腰 yāo <br>(phrases: 腰疼)
+leg <br>(phrases: left leg, right leg, upper leg, lower leg);腿 tuǐ <br>(phrases: 左腿，右腿，大腿，小腿)
+to have a fever <br>(phrases: a little feverish, not having a fever);发烧 fāshāo <br>(phrases: 有点儿发烧，不发烧)
+to have diarrhea <br>(phrases: having a little diarrhea);拉肚子 lā dùzi <br>(phrases: 有点儿拉肚子)
+to have a cold <br>(phrases: having a little cold);感冒 gǎnmào <br>(phrases: 有点儿感冒)
+emergency <br>(phrases: to register at the ER, emergency room);急诊 jízhěn <br>(phrases: 挂急诊，急诊室)
+surgical department <br>(phrases: surgeon);外科 wàikē <br>(phrases: 外科医生)
+Western medicine <br>(phrases: take Western medicine);西药 xīyào <br>(phrases: 吃西药)
+to have an X-ray exam, more commonly called 照X光 <br>(phrases: need to have an X-ray exam or not, the X-ray department);透视 tòushì <br>(phrases: 要不要透视，透视科)
+acupuncture (and moxibustion) <br>(phrases: no need for acupuncture);针灸 zhēnjiǔ <br>(phrases: 不用针灸)
+stool, feces <br>(phrases: to have a stool test, want to poop);大便 dàbiàn <br>(phrases: 化验大便，想大便)
+urine <br>(phrases: to have a urine test, want to pee);小便 xiǎobiàn <br>(phrases: 化验小便，想小便)
