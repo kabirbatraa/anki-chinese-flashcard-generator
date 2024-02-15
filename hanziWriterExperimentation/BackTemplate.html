@@ -51,6 +51,7 @@ document.getElementById('test').style.display = "none";
 // let allCharactersData = JSON.parse(JSON.stringify(allCharacters))
 // let importedCharacterJsonData = characterJsonData;
 
+/*
 var scriptsLoaded = 0;
 var totalScripts = hanziCharacters.length;
 // let characterData = {}
@@ -82,6 +83,15 @@ for (var character of hanziCharacters) {
     }
     document.body.appendChild(newScript);
 }
+*/
+
+// each character should have a div like this:
+// <div id="{character}">{strokeJsonData}</div>'
+for (var character of hanziCharacters) {
+    var jsonDiv = document.getElementById(character);
+    characterData[character] = JSON.parse(jsonDiv.innerHTML);
+}
+drawCharacters();
 
 
 // drawCharacters();
