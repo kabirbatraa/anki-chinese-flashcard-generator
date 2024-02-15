@@ -15,47 +15,79 @@
 <!-- <script src= "我.js"></script>  -->
 <!-- <script src= "我.js" type="text/javascript"></script> -->
 
-<script src= "_allCharacters.js" type="text/javascript"></script>
+<!-- slows down the load time drastically: -->
+<!-- <script src= "_allCharacters.js" type="text/javascript"></script> -->
 
 <script src="_hanziWriter.js"></script>
 
 <script>
+    let characterData = {}
+</script>
 
-// require("我.js")
+<!-- load this script dynamically -->
+<!-- <script src="我.js"></script> --> 
 
+<script>
 
 // var grid_data = `<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' class='grid-color'  id='grid-background-target'><g id="char_grid"><line x1='0' y1='0' x2='100%' y2='100%' stroke='var(--surface1)' /><line x1='100%' y1='0' x2='0' y2='100%' stroke='var(--surface1)' /><line x1='50%' y1='0' x2='50%' y2='100%' stroke='var(--surface1)' /><line x1='0' y1='50%' x2='100%' y2='50%' stroke='var(--surface1)' /></g></svg>`;
 // var span = document.createElement('span');
 // span.innerHTML = grid_data;
 
-
 let hanziCharacters = document.getElementById('hanzi').innerHTML;
-if (hanziCharacters == "") hanziCharacters = "我"; // default to wo if the card's  <div id="hanzi" style="display:none"> is empty
-
+if (hanziCharacters == "") hanziCharacters = "我"; // default to wo if the card's <div id="hanzi" style="display:none"> is empty
+    hanziCharacters = "我"; // hardcode for testing
+document.getElementById('test').innerHTML = hanziCharacters;
+    
     
 // from 我.js
 // let importedCharacterJsonData = JSON.parse(JSON.stringify(characterJsonData))
-let allCharactersData = JSON.parse(JSON.stringify(allCharacters))
+// let allCharactersData = JSON.parse(JSON.stringify(allCharacters))
 // let importedCharacterJsonData = characterJsonData;
 
-document.getElementById('test').innerHTML = hanziCharacters;
+let scriptsLoaded = 0;
+// let characterData = {}
 
-var characters = hanziCharacters.split("")
-for (x of characters) {
-    var writer = HanziWriter.create('target', x, {
-        charDataLoader: function() {
-            return allCharactersData[x];
-        },
-        width: 70,
-        height: 70,
-        padding: 5,   
-        showOutline: true,
-        strokeAnimationSpeed: 1, 
-        delayBetweenStrokes: 150, // milliseconds
-        radicalColor: '#337ab7' // blue
-    });
-    writer.loopCharacterAnimation();
-};
+// this code should load "我.js" in runtime
+var newScript = document.createElement("script");
+newScript.type = "text/javascript";
+newScript.src = "我.js";
+newScript.onload = () => {
+    scriptsLoaded += 1
+    // if (scriptsLoaded == hanziCharacters.length) {
+    //     drawCharacters()
+    // }
+    drawCharacters()
+}
+document.body.appendChild(newScript);
+
+// drawCharacters();
+
+function drawCharacters() {
+
+    // at this point, all scripts for the hanzi characters should have loaded
+    // characterData["insert chinese character"] will give the json data
+
+    
+    var characters = hanziCharacters.split("")
+    for (x of characters) {
+        var writer = HanziWriter.create('target', x, {
+            charDataLoader: function() {
+                return characterData[x];
+            },
+            width: 70,
+            height: 70,
+            padding: 5,   
+            showOutline: true,
+            strokeAnimationSpeed: 1, 
+            delayBetweenStrokes: 150, // milliseconds
+            radicalColor: '#337ab7' // blue
+        });
+        writer.loopCharacterAnimation();
+    };
+
+}
+
+
 
 
 // var characters = hanziCharacters.split("")
