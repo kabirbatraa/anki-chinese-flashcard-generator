@@ -142,6 +142,7 @@ for line in vocabListFile:
 
 
     # not using this right now
+    """
     def writeToFileStrokeOrderInfoFormat():
         # get the image associated with each hanzi character
         hanziGifImageTags = []
@@ -165,7 +166,7 @@ for line in vocabListFile:
             back += f'{imageTag}'
         
         ankiDeckFile.write(front + ";" + back + "\n")
-    
+    """
 
 
     # format for hanzi writer + my template
@@ -184,6 +185,10 @@ for line in vocabListFile:
             # for each hanzi
 
         back += f'<div id="hanzi" style="display:none">{hanzi.replace("（", "").replace("）", "")}</div>'
+        # add the hanzi to the front too so we can potentially add hanzi writer quiz
+        front += f'<div id="hanzi" style="display:none">{hanzi.replace("（", "").replace("）", "")}</div>'
+
+        # add the stroke order data in an invisible div
         for character in hanzi:
             # no need to add the dummy image to trick anki into thinking the character js is a dependency
             # back += f'<img src="{character}.js" style="display:none">'
