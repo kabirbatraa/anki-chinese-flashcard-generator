@@ -145,7 +145,7 @@ function normal() {
     // writer.updateDimensions({width: 80, height: 80})
 
     document.getElementById("normal").style.display = "none"
-    document.getElementById("large").style.display = "block"
+    document.getElementById("large").style.display = "flex"
 }
 
 function large() {
@@ -154,7 +154,7 @@ function large() {
     }
     // writer.updateDimensions({width: 160, height: 160})
 
-    document.getElementById("normal").style.display = "block"
+    document.getElementById("normal").style.display = "flex"
     document.getElementById("large").style.display = "none"
 }
 
@@ -187,8 +187,8 @@ function large() {
 
 
 <div class="buttonContainer">
-    <button id="normal" class="changeSizeButton" onclick="normal()" style="display:none">小</button>
-    <button id="large" class="changeSizeButton" onclick="large()" style="display:none">大</button>
+    <div id="normal" class="changeSizeButton" onclick="normal()" style="display:none">小</div>
+    <div id="large" class="changeSizeButton" onclick="large()" style="display:none">大</div>
 </div>
 
 <script>

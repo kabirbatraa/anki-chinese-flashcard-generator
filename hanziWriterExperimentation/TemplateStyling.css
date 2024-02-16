@@ -38,10 +38,26 @@
 }
 
 .changeSizeButton {
-    /* height: 15px;
-    width: 15px; */
-    padding: 5px 10px;
+    height: 30px;
+    aspect-ratio: 1 / 1;
+    /* width: 30px; */
+    padding: 10px 10px;
     border-radius: 50%;
+    background-color: #5e5e5e; /* same as hanzi stroke card */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* font-size: small; */
+
+    cursor: pointer;
+
+
+
 }
 
-
+.night_mode.changeSizeButton [style*="background-color:"] {
+    filter: invert(100%);
+}
