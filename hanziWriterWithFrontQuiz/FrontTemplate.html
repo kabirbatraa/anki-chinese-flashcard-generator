@@ -1,0 +1,147 @@
+{{Front}}
+
+<div id="test" class="card">template failed to read hanzi</div>
+<div class="outerBox">
+    <div id="hanziAnimationDiv" style="background-color: #5e5e5e;"></div>
+</div>
+
+
+<!-- import the character writer -->
+<script src="_hanziWriter.js"></script>
+
+
+<script>
+
+var isMobile = document.documentElement.classList.contains("mobile")
+
+// get the hanzi from the invisible div
+var hanziCharacters = document.getElementById('hanzi').innerHTML;
+if (hanziCharacters == "") hanziCharacters = "我"; // default to wo if the card's <div id="hanzi" style="display:none"> is empty
+
+// make the test div invisible
+document.getElementById('test').style.display = "none";
+
+
+
+var characterData = {}
+
+// parse the characters and add them to "characterData"
+for (var character of hanziCharacters) {
+    var jsonDiv = document.getElementById(character);
+    characterData[character] = JSON.parse(jsonDiv.innerHTML);
+}
+
+
+var writers = []
+
+drawCharacters();
+
+
+function drawCharacters() {
+
+    writers = []
+
+    // at this point, all scripts for the hanzi characters should have loaded
+    // characterData["insert chinese character"] will give the json data
+
+    
+    var characters = hanziCharacters.split("")
+    for (x of characters) {
+        var writer = HanziWriter.create('hanziAnimationDiv', x, {
+            charDataLoader: function() {
+                return characterData[x];
+            },
+            width: 80,
+            height: 80,
+            padding: 5,   
+            showOutline: true,
+            strokeAnimationSpeed: 1, 
+            delayBetweenStrokes: 150, // milliseconds
+            outlineColor: '#1e1e1e', // background outline, dark gray
+            strokeColor: '#e4e4e4', // off color white
+            radicalColor: '#bb86fc', // purple ish
+
+            showCharacter: false,
+        });
+        // writer.loopCharacterAnimation();
+        writer.quiz();
+        writers.push(writer)
+        // writer.updateDimensions({width: 160, height: 160})
+    }
+
+    // sample for quiz:
+    // var writer = HanziWriter.create('character-target-div', '测', {
+    //     width: 150,
+    //     height: 150,
+    //     showCharacter: false,
+    //     padding: 5
+    // });
+    // writer.quiz();
+
+
+}
+
+
+// create functions for making the hanzi small or large sized
+function small() {
+    for (let w of writers) {
+        w.updateDimensions({width: 80, height: 80})
+    }
+    // writer.updateDimensions({width: 80, height: 80})
+
+    document.getElementById("small").style.display = "none"
+    document.getElementById("large").style.display = "flex"
+}
+
+function large() {
+    for (let w of writers) {
+        w.updateDimensions({width: 160, height: 160})
+    }
+    // writer.updateDimensions({width: 160, height: 160})
+
+    document.getElementById("small").style.display = "flex"
+    document.getElementById("large").style.display = "none"
+}
+
+// small()
+// large()
+
+
+
+// var characters = hanziCharacters.split("")
+// var js = document.createElement("script");
+// 	js.type = "text/javascript";
+// 	js.src = "https://cdn.jsdelivr.net/npm/hanzi-writer@2.2/dist/hanzi-writer.min.js";
+// 	js.onload = function() {
+// 		for (x of characters) {
+// 			var writer = HanziWriter.create('target', x, {
+// 				width: 70,
+// 				height: 70,
+// 				padding: 5,   
+// 				showOutline: true,
+// 				strokeAnimationSpeed: 1, 
+// 				delayBetweenStrokes: 150, // milliseconds
+// 				radicalColor: '#337ab7' // blue
+// 			});
+// 			writer.loopCharacterAnimation();
+// 		};
+// 	};
+// 	document.body.appendChild(js);
+
+</script>
+
+
+<div class="buttonContainer">
+    <div id="small" class="changeSizeButton" onclick="small()" style="display:none">小</div>
+    <div id="large" class="changeSizeButton" onclick="large()" style="display:none">大</div>
+</div>
+
+<script>
+    if (isMobile) {
+        small()
+    }
+    else {
+        large()
+    }
+    
+</script>
