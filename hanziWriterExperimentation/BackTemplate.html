@@ -36,6 +36,9 @@
 
 <script>
 
+var isMobile = document.documentElement.classList.contains("mobile")
+
+
 // var grid_data = `<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' class='grid-color'  id='grid-background-target'><g id="char_grid"><line x1='0' y1='0' x2='100%' y2='100%' stroke='var(--surface1)' /><line x1='100%' y1='0' x2='0' y2='100%' stroke='var(--surface1)' /><line x1='50%' y1='0' x2='50%' y2='100%' stroke='var(--surface1)' /><line x1='0' y1='50%' x2='100%' y2='50%' stroke='var(--surface1)' /></g></svg>`;
 // var span = document.createElement('span');
 // span.innerHTML = grid_data;
@@ -137,14 +140,14 @@ function drawCharacters() {
 }
 
 
-// create functions for making the hanzi normal or large sized
-function normal() {
+// create functions for making the hanzi small or large sized
+function small() {
     for (let w of writers) {
         w.updateDimensions({width: 80, height: 80})
     }
     // writer.updateDimensions({width: 80, height: 80})
 
-    document.getElementById("normal").style.display = "none"
+    document.getElementById("small").style.display = "none"
     document.getElementById("large").style.display = "flex"
 }
 
@@ -154,11 +157,11 @@ function large() {
     }
     // writer.updateDimensions({width: 160, height: 160})
 
-    document.getElementById("normal").style.display = "flex"
+    document.getElementById("small").style.display = "flex"
     document.getElementById("large").style.display = "none"
 }
 
-// normal()
+// small()
 // large()
 
 
@@ -187,10 +190,16 @@ function large() {
 
 
 <div class="buttonContainer">
-    <div id="normal" class="changeSizeButton" onclick="normal()" style="display:none">小</div>
+    <div id="small" class="changeSizeButton" onclick="small()" style="display:none">小</div>
     <div id="large" class="changeSizeButton" onclick="large()" style="display:none">大</div>
 </div>
 
 <script>
-    normal()
+    if (isMobile) {
+        small()
+    }
+    else {
+        large()
+    }
+    
 </script>
