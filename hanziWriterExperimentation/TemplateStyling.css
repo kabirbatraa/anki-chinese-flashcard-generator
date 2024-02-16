@@ -29,3 +29,19 @@
 
     
 }
+
+.buttonContainer {
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.changeSizeButton {
+    /* height: 15px;
+    width: 15px; */
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+
