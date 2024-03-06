@@ -25,7 +25,8 @@
 <!-- slows down the load time drastically: -->
 <!-- <script src= "_allCharacters.js" type="text/javascript"></script> -->
 
-<script src="_hanziWriter.js"></script>
+<!-- it seems that it tries to draw the characters before this script has loaded, so what if we load it at the end and do an onload -->
+<!-- <script src="_hanziWriter.js"></script> -->
 
 <script>
     var characterData = {}
@@ -100,9 +101,10 @@ for (var character of hanziCharacters) {
 
 var writers = []
 
-drawCharacters();
-
-
+function hanziWriterOnload() {
+    drawCharacters();
+    initializeButtonState();
+}
 // drawCharacters();
 
 
@@ -183,6 +185,15 @@ function large() {
     document.getElementById("large").style.display = "none"
 }
 
+function initializeButtonState() {
+    if (isMobile) {
+        small()
+    }
+    else {
+        large()
+    }
+}
+
 // small()
 // large()
 
@@ -216,11 +227,8 @@ function large() {
     <div id="large" class="changeSizeButton" onclick="large()" style="display:none">大</div>
 </div>
 
-<script>
-    if (isMobile) {
-        small()
-    }
-    else {
-        large()
-    }
-</script>
+
+<script src="_hanziWriter.js" onload="hanziWriterOnload()"></script>
+
+
+
