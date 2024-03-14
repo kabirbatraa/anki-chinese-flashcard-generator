@@ -1,0 +1,88 @@
+﻿Text 1
+秋天；qiūtiān: autumn, fall；北京的秋天，秋天的天气，一个秋天；Beijing’s autumn, fall weather, one autumn
+了；le: an aspect particle indicating something has happened or a change；秋天了，车来了，生病了，我好了；it’s fall now, the car has arrived, got ill, I’m all good now
+凉快；liángkuai: (weather) cool but not too cold；天气凉快了，很凉快；the weather has become cool now, (the weather is) pleasantly cool 
+空气；kōngqì: air (especially when describing air quality)；空气很好，空气不好；the air is of good quality, the air is of bad quality
+最；zuì: most, the highest degree；最好，最贵，最漂亮，最喜欢；best, most expensive, prettiest, favorite 
+季节；jìjié: season；一个季节，哪个季节，四季；one season, which season, four seasons
+热；rè: hot；天气很热，有点儿热，我很热；weather is hot, a little hot, I’m overheating
+春天；chūntiān: spring；最喜欢春天，春天了，一个春天；to like spring the most, it’s spring now, one spring
+暖和；nuǎnhuo: warm (especially when describing weather and clothese)；暖和的天气，暖和的衣服，很暖和；warm weather, warm clothes, very warm
+刮风；guāfēng: to blow wind；刮风了，今天刮大风；the wind is blowing now, today is very windy
+风；fēng: wind；大风，一阵风；heavy wind, a gust of wind
+家乡；jiāxiāng: hometown；我的家乡；my hometown
+树；shù: tree；大树，树绿了，一棵树；big tree, trees have turned green, a tree
+夏天；xiàtiān: summer；这儿的夏天特别热，喜欢夏天，一个夏天；the summer here is particularly hot, like summer, one summer
+冬天；dōngtiān: winter；冬天很冷，喜欢冬天，一个冬天，冬天的树；winter is very cold, to like winter, a winter, trees in winter
+下雨；xiàyǔ: to rain；下雨了，现在在下大雨；it’s raining, right now it’s raining heavily 
+雨；yǔ: rain；小雨，雨天，一场雨，一阵雨；light rain, rainy day, a rain, a gust of rain
+下雪；to snow；下雪了，今天下雪，今天是个下雪天；it’s snowing, today snows, today is a snowy day
+雪；xuě: snow；大雪，雪天，雪人；heavy snow, snowy day, snowman
+游泳；yóuyǒng: to swim；去游泳，游泳馆；go swimming, natatorium
+滑雪；huáxuě: to ski；去滑雪，喜欢滑雪；go skiing, to like skiing
+会；huì: know how to；会滑雪，会说汉语，会一点儿日语；know how to ski, know how to speak Chinese, can speak a little Japanese
+以前；yǐqián: before, prior than, previously；2020年以前，上大学以前，以前不会中文；before 2020, before  college, didn’t know how to speak Chinese before
+（飞）机票；(fēi)jīpiào: flight ticket；买飞机票，机票很贵；to buy plane ticket, flight ticket is very expensive
+飞机；fēijī: plane；一架飞机，（飞）机场；a plane, airport
+票；piào: ticket；买票，电影票，车票，一张票；to buy tickets, movie ticket, bus or train ticket, a ticket
+坐；zuò: to sit, to travel by means of；坐飞机，坐车，坐公共汽车，坐地铁；to travel by plane, to ride a car, to ride a bus, to ride a subway
+
+
+
+
+Text 2 
+博物馆；bówùguǎn: museum；去博物馆，历史博物馆，科学博物馆；go to the museum, history museum, science museum
+展览；zhǎnlǎn: to exhibit, exhibition；在博物馆展览，看展览，展览馆，美术展览；to exhibit at a museum, to see an exhibition, exhibition hall, art exhibition
+时候；shíhou: time, moment；什么时候，这（个）时候，上大学的时候，我五岁的时候；what time, at this moment, the time when (I was) in college, when I was five years old
+车；chē: car；开车，坐车，买车，我有车，一辆车；to drive, to ride a car, to buy a car, I have a car, one car
+开车；kāichē: to drive；会开车，开车的时候；know how to drive, while driving
+开；kāi: to open, to drive；开门，开车，开飞机；to open a door, to drive a car, to pilot a plane
+驾照；jiàzhào: driving license；有驾照，美国驾照，一本驾照；have a driving license, American driving license, one driving license
+打车；dǎchē: to take a taxi, (to go somewhere) by taxi；打车去学校，我们打个车，打一辆车；to go to school by taxi, let’s get a cab, to get a taxi
+路上；lùshang: on the way；在路上，路上车多，路上人少；on the way, there are many cars on the road, there are very few people on the street
+可能；kěnéng: may, maybe, possibly；可能堵车，可能下雨；there may be a traffic jam, it may rain
+堵车；dǔchē: to be congested with traffic, to be in a traffic jam；堵车了，路上堵车，这个时候容易堵车；there is a traffic jam, there is a traffic jam on the road, this time is prone to have traffic jams
+堵；dǔ: to block；太堵了，路堵了；very much blocked, the road is blocked
+慢；màn: slow；很慢，有点儿慢，慢点走，慢慢说；very slow, a little slow, walk slowly, say it slowly
+地铁；dìtiě: subway；坐地铁，北京的地铁，地铁站；to ride the subway, Beijing subway, subway station
+公共汽车；gōnggòng qìchē: public bus；坐公共汽车，11路公共汽车，一辆公共汽车，公共汽车站；to ride the bus, bus line number 11, one bus, bus station
+公共；gōnggòng: public；公共厕所，公共图书馆；public restroom, public library
+汽车；qìchē: car；坐汽车，开汽车，汽车工程师，一辆汽车；to ride the car, to drive a car, car engineer, one car
+路；lù: route, measure word for bus lines；111路公共汽车；bus line number 111
+换；huàn: to change, to switch to, to transfer to；换地铁，换56路公共汽车，换衣服；switch to subway, switch to bus line number 56, to change clothes
+线；xiàn: line, thread；地铁线，地铁1号线，一条线；subway line, subway line number one, one line
+饿；è: hungry；肚子饿，有点儿饿，特别饿，我饿了；belly is feeling hungry, a little hungry, I’m hungry
+天安门；Tiān’ān Mén；地铁天安门站；the Tiān’ān Mén subway stop
+苹果园；Píngguǒyuán: literally, “Apple Orchard”；地铁苹果园站；the Píngguǒyuán subway stop
+
+
+
+
+
+
+Supplementary
+火车；huǒchē: train；坐火车，火车站，一列火车；to ride a train, train station, a train
+火车站；huǒchēzhàn: train station；去火车站，上海火车站；go to the train station, Shanghai station
+船；chuán: boat, ship；坐船，一条船；to ride a boat, a boat
+机场；jīchǎng: airport；一个机场，芝加哥机场；an airport, Chicago airport
+骑；qí: to ride (a bicycle or horse)；骑车，骑自行车，骑马；to ride a bike, to ride a bike, to ride a horse
+自行车；zìxíngchē: bicycle；一辆自行车；a bike
+走路；zǒulù: to walk；每天走路，走路去学校；walk everyday, walk to school
+滑冰；huábīng: to ice-skate；会滑冰，喜欢滑冰，滑冰运动员；know how to ice skate, to like ice skating, ice skate athlete
+篮球；lánqiú: basketball；打篮球，很会打篮球，篮球运动员，篮球场，一个篮球；to play basketball, very good at playing basketball, basketball player, basketball court, a basketball
+排球；páiqiú: volleyball；打排球，排球馆，一个排球；to play volleyball, volleyball court, a volleyball 
+踢；tī: to kick；踢足球，踢人；to play soccer, to kick someone
+足球；zúqiú: soccer；足球，足球场，一个足球；soccer, soccer field, one football
+城里；chénglǐ: in town, city；去城里；to go into town
+美术馆；měishùguǎn: art gallery；去美术馆看画展，一个美术馆；to go see an art exhibit at an art gallery, one art gallery
+参观；cānguān: to vist (usually an exhibition or a museum)；参观美术馆，参观博物馆，参观画展；to visit an art gallery, to visit a museum, to see a painting exhibition
+公园；gōngyuán: public park；去公园，漂亮的小公园，一个公园；to go to a park, a pretty little park, a park
+售票员；shòupiàoyuán: ticket seller, conductor, box-office clerk；电影院的售票员，一个售票员；box-office clerk at a movie theater, a ticket seller
+师傅；shīfu: master, a respectful form of address for workers, such as bus and taxi drivers
+
+
+
+
+Basic Hanzi
+禾；hé: grain seedling；禾苗；grain seedling
+穴；xué: cave, hole；洞穴；cave
