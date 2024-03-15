@@ -6,8 +6,7 @@ Takes in a chinese vocab list generates an anki deck package with stroke order a
 ![](Screenshots/ankiScreenshotMobile.jpg)
 ![](Screenshots/ankiScreenshotMobileBig.jpg) -->
 
-<!-- <div float="left"> -->
-<div style="display: flex; justify-content: space-evenly" >
+<!-- <div style="display: flex; justify-content: space-evenly" >
     <div style="width: 60%">
         <img src="Screenshots/ankiScreenshotDesktop.png">
     </div>
@@ -17,9 +16,19 @@ Takes in a chinese vocab list generates an anki deck package with stroke order a
     <div style="width: 16%">
         <img src="Screenshots/ankiScreenshotMobileBig.jpg">
     </div>
-</div>
-<!-- <div style="display: flex; justify-content: space-evenly" >
 </div> -->
+
+<div style="display: flex; justify-content: space-evenly; width: 100%">
+    <!-- <div style="width: 60%"> -->
+        <img src="Screenshots/ankiScreenshotDesktop.png" width="60%">
+    <!-- </div> -->
+    <!-- <div style="width: 16%"> -->
+        <img src="Screenshots/ankiScreenshotMobile.jpg" width="16%">
+    <!-- </div> -->
+    <!-- <div style="width: 16%"> -->
+        <img src="Screenshots/ankiScreenshotMobileBig.jpg" width="16%">
+    <!-- </div> -->
+</div>
 
 ## Features:
 
