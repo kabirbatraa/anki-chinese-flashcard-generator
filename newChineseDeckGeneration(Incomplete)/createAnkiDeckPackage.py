@@ -232,7 +232,8 @@ for deckName in decks.keys():
 
         newCard = genanki.Note(
             model=my_model, 
-            fields=[html.escape(front), html.escape(back)]
+            # fields=[html.escape(front), html.escape(back)]
+            fields=[front, back]
         )
 
         # add new card to deck
