@@ -1,7 +1,7 @@
 
 # write the name of the vocab list here: 
 # Example: vocabListFileName = "Lesson 1.txt"
-outerDeckName = "Lesson 9"
+outerDeckName = "Chinese::Lesson 9"
 vocabListFileName = "L9 Vocab List.docx.txt"
 # note that only txt files work
 
@@ -219,7 +219,7 @@ my_model = genanki.Model(
 
 allGenAnkiDecks = []
 for deckName in decks.keys():
-    deckFullName = f"Chinese::{outerDeckName}::{deckName}"
+    deckFullName = f"{outerDeckName}::{deckName}"
     deckId = random.randrange(1 << 30, 1 << 31)
     print("new deck:", deckFullName)
 
@@ -246,4 +246,4 @@ for deckName in decks.keys():
 # add all the decks into one package called {outerDeckName}
 my_package = genanki.Package(allGenAnkiDecks)
 my_package.media_files = ['_hanziWriter.js']
-my_package.write_to_file(f'{outerDeckName}.apkg')
+my_package.write_to_file(f'{outerDeckName.replace(":", "-")}.apkg')
