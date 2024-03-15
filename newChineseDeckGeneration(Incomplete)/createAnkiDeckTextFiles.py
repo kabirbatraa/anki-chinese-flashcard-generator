@@ -1,55 +1,11 @@
-# write the name of the vocab list here:
+
+# write the name of the vocab list here: (might only work with txt files)
 # Example: vocabListFileName = "Lesson 1.txt"
-vocabListFileName = "L8 Vocab List.txt"
 
-
-
-# if beautifulsoup4 or requests don't exist, then 
-# use the command: pip install beautifulsoup4, or pip install requests 
-# import requests
-# from bs4 import BeautifulSoup
-
-# url = "http://www.strokeorder.info/mandarin.php?q=我"
-# url = url.encode('utf-8')
-# print(url)
-# response = requests.get(url)
-# html_content = response.content
-
-# print(html_content)
-
-# soup = BeautifulSoup(html_content, "html.parser")
-# img_tags = soup.find_all("img")
-
-# image_urls = []
-# for img_tag in img_tags:
-#     image_url = img_tag.get("src")
-#     if image_url:
-#         image_urls.append(image_url)
-
-# for image_url in image_urls:
-#     image_response = requests.get(image_url)
-#     with open(f"image_{image_urls.index(image_url)}.jpg", "wb") as f:
-#         f.write(image_response.content)
-
+vocabListFileName = "L9 Vocab List.docx.txt"
+vocabListFileName = "testList.txt"
 
 import requests
-
-def downloadStrokeData(character = "我"):
-    if character in "（）":
-        # skip because its just a parenthesis
-        return
-
-    url = f"https://cdn.jsdelivr.net/npm/hanzi-writer-data@latest/{character}.json"
-    response = requests.get(url)
-    jsonData = response.content
-    # with open(f'jsonStrokeData/stroke_data_{character}.json', 'wb') as f:
-    #     f.write(jsonData)
-    
-    with open(f'jsonStrokeData/stroke_data_{character}.js', 'wb') as f:
-        jsonData = jsonData.decode()
-        jsonData = f'characterData["{character}"] = ' + jsonData
-        jsonData = jsonData.encode()
-        f.write(jsonData)
     
 def getStrokeData(character = "我"):
     # if character in "（）":
@@ -61,19 +17,24 @@ def getStrokeData(character = "我"):
     jsonData = response.content
     jsonData = jsonData.decode()
 
+    # if its not a chinese character, then returns None
     if "Couldn't find the requested file" in jsonData:
         print("could not find file for " + character + "; skipping this character")
         return None
     return jsonData
 
 # test
-print("testing getStrokeData", getStrokeData("（"))
+# print("testing getStrokeData", getStrokeData("（"))
 
 vocabListFile = open(vocabListFileName, "r", encoding="utf8") # "r" means read
 # print(file.read())
 
+# 'deckname': [('front', 'back'), ('front', 'back'), ...)]
+decks = {}
+
 # new file is created whenever a new section is reached in the file
 ankiDeckFile = None
+currentDeckName = None
 
 # each line has a new line at the end of it already
 for line in vocabListFile:
@@ -103,6 +64,7 @@ for line in vocabListFile:
     # if a line does not have any semicolons, it must be the title of a new deck
     if len(lineParts) == 1:
         deckName = lineParts[0]
+        # deckName = deckName.replace(' ', ' ') # attempt to replace chinese space with regular space
         print("New Deck:", deckName)
 
         # if we already have a file open, then close it before creating a new file
@@ -111,14 +73,16 @@ for line in vocabListFile:
         
         # create a new file for this new deck
         ankiDeckFile = open(deckName + ".txt", "w", encoding="utf8")
+        currentDeckName = deckName
+        
         continue
 
     # otherwise, this is a vocab term
     vocabTerm = lineParts
-
     
     # print(vocabTerm)
     hanzi = vocabTerm[0]
+    print('adding', hanzi)
     pinyin = vocabTerm[1]
     definition = vocabTerm[2]
     examplesExist = True
@@ -136,6 +100,8 @@ for line in vocabListFile:
     # if no file was opened, then this vocab term comes before something like "Text 1" to label the deck
     if ankiDeckFile == None:
         ankiDeckFile = open("NoDeckName.txt", 'w', encoding="utf8")
+        currentDeckName = "NoDeckName"
+        
 
 
     # now write the vocab term to the file
@@ -170,7 +136,7 @@ for line in vocabListFile:
 
 
     # format for hanzi writer + my template
-    def writeToFileHanziWriterFormat():
+    def getCardFrontBack():
 
         front = f"{definition}"
         if examplesExist: front += f"<br>(phrases: {exampleEnglish})"
@@ -198,10 +164,19 @@ for line in vocabListFile:
             if strokeJsonData == None: continue
             back += f'<div id="{character}" style="display:none">{strokeJsonData}</div>'
         
-        ankiDeckFile.write(front + ";" + back + "\n")
+        return (front, back)
+        # ankiDeckFile.write(front + ";" + back + "\n")
+
+    # writeToFileHanziWriterFormat()
+    front, back = getCardFrontBack()
+    # ankiDeckFile.write(front + ";" + back + "\n")
+    if (currentDeckName not in decks): decks[currentDeckName] = []
+    decks[currentDeckName].append((front, back))
 
 
-    writeToFileHanziWriterFormat()
 
 
+# decks dictionary
+# each deck should contain a list of tuples: front and back of card
+print(decks)
 
