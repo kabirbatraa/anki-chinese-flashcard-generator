@@ -33,7 +33,7 @@ Takes in a chinese vocab list generates an anki deck package with stroke order a
 ## Features:
 
 - Custom HTML/CSS/Javascript template uses the HanziWriter javascript library to render Chinese flashcards with stroke order.
-  - includes restart button
+  - includes resize button
   - includes ability to tap the character to restart the animation
   - includes stroke speed slider (feature in progress)
 - Parses the vocab list text file, downloads HanziWriter stroke order data, and generates the front and back of flashcards (including examples) in a format compatible with my flashcard template.
