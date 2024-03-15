@@ -6,6 +6,8 @@ vocabListFileName = "L9 Vocab List.docx.txt"
 vocabListFileName = "testList.txt"
 
 import requests
+import genanki
+
     
 def getStrokeData(character = "我"):
     # if character in "（）":
@@ -31,6 +33,7 @@ vocabListFile = open(vocabListFileName, "r", encoding="utf8") # "r" means read
 
 # 'deckname': [('front', 'back'), ('front', 'back'), ...)]
 decks = {}
+writeToFiles = False
 
 # new file is created whenever a new section is reached in the file
 ankiDeckFile = None
@@ -68,11 +71,11 @@ for line in vocabListFile:
         print("New Deck:", deckName)
 
         # if we already have a file open, then close it before creating a new file
-        if ankiDeckFile != None:
-            ankiDeckFile.close()
+        if currentDeckName != None:
+            if writeToFiles: ankiDeckFile.close()
         
         # create a new file for this new deck
-        ankiDeckFile = open(deckName + ".txt", "w", encoding="utf8")
+        if writeToFiles: ankiDeckFile = open(deckName + ".txt", "w", encoding="utf8")
         currentDeckName = deckName
         
         continue
@@ -98,41 +101,10 @@ for line in vocabListFile:
 
 
     # if no file was opened, then this vocab term comes before something like "Text 1" to label the deck
-    if ankiDeckFile == None:
-        ankiDeckFile = open("NoDeckName.txt", 'w', encoding="utf8")
+    if currentDeckName == None:
+        if writeToFiles: ankiDeckFile = open("NoDeckName.txt", 'w', encoding="utf8")
         currentDeckName = "NoDeckName"
         
-
-
-    # now write the vocab term to the file
-
-
-    # not using this right now
-    """
-    def writeToFileStrokeOrderInfoFormat():
-        # get the image associated with each hanzi character
-        hanziGifImageTags = []
-
-        firstCharacter = hanzi[0]
-        
-        # the stroke order website seems to not be working
-
-
-        hanziGifImageTags.append('<img src="apple.jpg">')
-
-
-        
-        
-        front = f"{definition}"
-        if examplesExist: front += f"<br>(phrases: {exampleEnglish})"
-        back = f"{hanzi} {pinyin}"
-        if examplesExist: back += f"<br>(phrases: {exampleChinese})"
-        back += "<br>"
-        for imageTag in hanziGifImageTags:
-            back += f'{imageTag}'
-        
-        ankiDeckFile.write(front + ";" + back + "\n")
-    """
 
 
     # format for hanzi writer + my template
@@ -169,7 +141,7 @@ for line in vocabListFile:
 
     # writeToFileHanziWriterFormat()
     front, back = getCardFrontBack()
-    # ankiDeckFile.write(front + ";" + back + "\n")
+    if writeToFiles: ankiDeckFile.write(front + ";" + back + "\n")
     if (currentDeckName not in decks): decks[currentDeckName] = []
     decks[currentDeckName].append((front, back))
 
@@ -178,5 +150,76 @@ for line in vocabListFile:
 
 # decks dictionary
 # each deck should contain a list of tuples: front and back of card
-print(decks)
 
+
+
+
+import genanki 
+
+# def convertTextFileToDeck(textFileName):
+#     open(textFile)
+
+# how to escape html:
+# fields=[html.escape(f) for f in ['AT&T was originally called', 'Bell Telephone Company']]
+
+
+# from anki ?
+# Card ID	1710460837938
+# Note ID	1710460837937
+
+# https://github.com/AnKing-VIP/advanced-browser
+# https://ankiweb.net/shared/info/874215009
+# use this addon to get internal information on cards
+# including the note type id aka model id
+# this will allow me to overwrite the old model on lesson 8
+# (because it will have the same id)
+
+# old model id: 1607392319
+# updating the model id will create a new model (card template)
+
+# the model id i will use for now: 1956882460
+# text1: 1567115450
+# text2: 1705746358
+# supplementary: 1152996867
+# basic hanzi: 1085417380
+
+# how to create a model:
+my_model = genanki.Model(
+    1607392310,
+    "Simple Model",
+    fields=[
+        {"name": "Question"},
+        {"name": "Answer"},
+    ],
+    templates=[
+        {
+            "name": "Card 1",
+            "qfmt": "{{Question}}",
+            "afmt": '{{FrontSide}}<hr id="answer">{{Answer}}',
+        },
+    ],
+    css=\
+""".card {
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color: white;
+}"""
+)
+# use a unique model id:
+# import random; random.randrange(1 << 30, 1 << 31)
+# and hardcode it into your Model definition.
+
+# create a new note:
+my_note = genanki.Note(
+    model=my_model, 
+    fields=["Capital of Argentina", "Buenos Aires"]
+)
+
+
+# make a deck
+my_deck = genanki.Deck(2059400110, "Country Capitals")
+
+my_deck.add_note(my_note)
+genanki.Package(my_deck).write_to_file('output.apkg')

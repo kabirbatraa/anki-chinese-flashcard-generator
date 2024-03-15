@@ -1,23 +1,16 @@
 Text 1
 秋天；qiūtiān: autumn, fall；北京的秋天，秋天的天气，一个秋天；Beijing’s autumn, fall weather, one autumn
 了；le: an aspect particle indicating something has happened or a change；秋天了，车来了，生病了，我好了；it’s fall now, the car has arrived, got ill, I’m all good now
-凉快；liángkuai: (weather) cool but not too cold；天气凉快了，很凉快；the weather has become cool now, (the weather is) pleasantly cool 
-空气；kōngqì: air (especially when describing air quality)；空气很好，空气不好；the air is of good quality, the air is of bad quality
-最；zuì: most, the highest degree；最好，最贵，最漂亮，最喜欢；best, most expensive, prettiest, favorite 
 
 
 Text 2 
 博物馆；bówùguǎn: museum；去博物馆，历史博物馆，科学博物馆；go to the museum, history museum, science museum
-展览；zhǎnlǎn: to exhibit, exhibition；在博物馆展览，看展览，展览馆，美术展览；to exhibit at a museum, to see an exhibition, exhibition hall, art exhibition
-时候；shíhou: time, moment；什么时候，这（个）时候，上大学的时候，我五岁的时候；what time, at this moment, the time when (I was) in college, when I was five years old
 
 
 Supplementary
 火车；huǒchē: train；坐火车，火车站，一列火车；to ride a train, train station, a train
-火车站；huǒchēzhàn: train station；去火车站，上海火车站；go to the train station, Shanghai station
 船；chuán: boat, ship；坐船，一条船；to ride a boat, a boat
 
 
 Basic Hanzi
 禾；hé: grain seedling；禾苗；grain seedling
-穴；xué: cave, hole；洞穴；cave
