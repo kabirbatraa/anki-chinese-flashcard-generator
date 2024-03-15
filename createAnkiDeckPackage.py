@@ -185,9 +185,9 @@ model_id = 1956882460
 model_name = "Kabir's Chinese Card Template"
 
 
-frontTemplateFileString = open("templateFiles/FrontTemplate.html", "r", encoding="utf8").read()
-backTemplateFileString = open("templateFiles/BackTemplate.html", "r", encoding="utf8").read()
-templateStylingFileString = open("templateFiles/TemplateStyling.css", "r", encoding="utf8").read()
+frontTemplateFileString = open("FrontTemplate.html", "r", encoding="utf8").read()
+backTemplateFileString = open("BackTemplate.html", "r", encoding="utf8").read()
+templateStylingFileString = open("TemplateStyling.css", "r", encoding="utf8").read()
 
 
 # create the model aka template
