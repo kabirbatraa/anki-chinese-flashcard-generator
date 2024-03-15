@@ -219,10 +219,10 @@ my_model = genanki.Model(
 for deckName in decks.keys():
     deckFullName = f"Chinese::{outerDeckName}::{deckName}"
     deckId = random.randrange(1 << 30, 1 << 31)
-    print("new deck:", deckName)
+    print("new deck:", deckFullName)
 
     # create the new deck
-    my_deck = genanki.Deck(deckId, deckName)
+    my_deck = genanki.Deck(deckId, deckFullName)
 
     # (front, back)
     cards = decks[deckName]
@@ -241,4 +241,4 @@ for deckName in decks.keys():
 
     my_package.media_files = ['_hanziWriter.js']
 
-    my_package.write_to_file(f'{deckName}.apkg')
+    my_package.write_to_file(f'{deckFullName.replace("::","-")}.apkg')
