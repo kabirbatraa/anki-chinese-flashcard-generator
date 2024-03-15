@@ -20,4 +20,3 @@ Takes in vocab list from chinese class and generates anki deck.
    - use pip install \<library name\>.
 5. That's it! the apkg file will be created for you!
 
-I recommend using 
