@@ -1,11 +1,11 @@
 
-# write the name of the vocab list here: (might only work with txt files)
+# write the name of the vocab list here: 
 # Example: vocabListFileName = "Lesson 1.txt"
 outerDeckName = "Lesson 9"
 vocabListFileName = "L9 Vocab List.docx.txt"
-vocabListFileName = "testList.txt"
+# note that only txt files work
 
-import html
+# import html
 import requests
 import genanki
 import random
