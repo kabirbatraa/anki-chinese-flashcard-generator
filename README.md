@@ -2,6 +2,25 @@
 
 Takes in a chinese vocab list generates an anki deck package with stroke order animation.
 
+<!-- ![](Screenshots/ankiScreenshotDesktop.png)
+![](Screenshots/ankiScreenshotMobile.jpg)
+![](Screenshots/ankiScreenshotMobileBig.jpg) -->
+
+<!-- <div float="left"> -->
+<div style="display: flex; justify-content: space-evenly" >
+    <div style="width: 60%">
+        <img src="Screenshots/ankiScreenshotDesktop.png">
+    </div>
+    <div style="width: 16%">
+        <img src="Screenshots/ankiScreenshotMobile.jpg">
+    </div>
+    <div style="width: 16%">
+        <img src="Screenshots/ankiScreenshotMobileBig.jpg">
+    </div>
+</div>
+<!-- <div style="display: flex; justify-content: space-evenly" >
+</div> -->
+
 ## Features:
 
 - Custom HTML/CSS/Javascript template uses the HanziWriter javascript library to render Chinese flashcards with stroke order.
