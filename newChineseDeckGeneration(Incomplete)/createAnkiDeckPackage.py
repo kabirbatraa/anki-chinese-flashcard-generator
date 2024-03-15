@@ -1,7 +1,7 @@
 
 # write the name of the vocab list here: (might only work with txt files)
 # Example: vocabListFileName = "Lesson 1.txt"
-
+outerDeckName = "Lesson 9"
 vocabListFileName = "L9 Vocab List.docx.txt"
 vocabListFileName = "testList.txt"
 
@@ -217,6 +217,7 @@ my_model = genanki.Model(
 #     fields=["Capital of Argentina", "Buenos Aires"]
 # )
 for deckName in decks.keys():
+    deckFullName = f"Chinese::{outerDeckName}::{deckName}"
     deckId = random.randrange(1 << 30, 1 << 31)
     print("new deck:", deckName)
 
@@ -227,7 +228,7 @@ for deckName in decks.keys():
     cards = decks[deckName]
 
     for front, back in cards:
-        print('adding', front)
+        print('adding', front[0:10] + "...")
 
         newCard = genanki.Note(
             model=my_model, 
