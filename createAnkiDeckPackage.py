@@ -246,4 +246,4 @@ for deckName in decks.keys():
 # add all the decks into one package called {outerDeckName}
 my_package = genanki.Package(allGenAnkiDecks)
 my_package.media_files = ['_hanziWriter.js']
-my_package.write_to_file(f'{outerDeckName.replace(":", "-")}.apkg')
+my_package.write_to_file(f'{outerDeckName.replace(":", "-")} Anki Package.apkg')
