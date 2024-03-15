@@ -6,8 +6,20 @@ import genanki
 # how to escape html:
 # fields=[html.escape(f) for f in ['AT&T was originally called', 'Bell Telephone Company']]
 
-# old model id: 1607392319
 
+# from anki ?
+# Card ID	1710460837938
+# Note ID	1710460837937
+
+# https://github.com/AnKing-VIP/advanced-browser
+# https://ankiweb.net/shared/info/874215009
+# use this addon to get internal information on cards
+# including the note type id aka model id
+# this will allow me to overwrite the old model on lesson 8
+# (because it will have the same id)
+
+# old model id: 1607392319
+# updating the model id will create a new model (card template)
 
 # how to create a model:
 my_model = genanki.Model(
