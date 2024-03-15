@@ -5,8 +5,10 @@
 vocabListFileName = "L9 Vocab List.docx.txt"
 vocabListFileName = "testList.txt"
 
+import html
 import requests
 import genanki
+import random
 
     
 def getStrokeData(character = "我"):
@@ -154,7 +156,7 @@ for line in vocabListFile:
 
 
 
-import genanki 
+
 
 # def convertTextFileToDeck(textFileName):
 #     open(textFile)
@@ -177,49 +179,65 @@ import genanki
 # old model id: 1607392319
 # updating the model id will create a new model (card template)
 
-# the model id i will use for now: 1956882460
-# text1: 1567115450
-# text2: 1705746358
-# supplementary: 1152996867
-# basic hanzi: 1085417380
+model_id = 1956882460 
+# random.randrange(1 << 30, 1 << 31)
+# deck_ids = [1567115450, 1705746358, 1152996867, 1085417380]
+model_name = "Kabir's Chinese Card Template"
 
-# how to create a model:
+
+frontTemplateFileString = open("templateFiles/FrontTemplate.html", "r", encoding="utf8").read()
+backTemplateFileString = open("templateFiles/BackTemplate.html", "r", encoding="utf8").read()
+templateStylingFileString = open("templateFiles/TemplateStyling.css", "r", encoding="utf8").read()
+
+
+# create the model aka template
 my_model = genanki.Model(
-    1607392310,
-    "Simple Model",
+    model_id,
+    model_name,
     fields=[
-        {"name": "Question"},
-        {"name": "Answer"},
+        {"name": "Front"},
+        {"name": "Back"},
     ],
     templates=[
         {
             "name": "Card 1",
-            "qfmt": "{{Question}}",
-            "afmt": '{{FrontSide}}<hr id="answer">{{Answer}}',
+            "qfmt": frontTemplateFileString,
+            "afmt": backTemplateFileString,
         },
     ],
-    css=\
-""".card {
-    font-family: arial;
-    font-size: 20px;
-    text-align: center;
-    color: black;
-    background-color: white;
-}"""
+    css=templateStylingFileString
 )
-# use a unique model id:
+# make sure to use a unique model id:
 # import random; random.randrange(1 << 30, 1 << 31)
 # and hardcode it into your Model definition.
 
 # create a new note:
-my_note = genanki.Note(
-    model=my_model, 
-    fields=["Capital of Argentina", "Buenos Aires"]
-)
+# my_note = genanki.Note(
+#     model=my_model, 
+#     fields=["Capital of Argentina", "Buenos Aires"]
+# )
+for deckName in decks.keys():
+    deckId = random.randrange(1 << 30, 1 << 31)
+    print("new deck:", deckName)
 
+    # create the new deck
+    my_deck = genanki.Deck(deckId, deckName)
 
-# make a deck
-my_deck = genanki.Deck(2059400110, "Country Capitals")
+    # (front, back)
+    cards = decks[deckName]
 
-my_deck.add_note(my_note)
-genanki.Package(my_deck).write_to_file('output.apkg')
+    for front, back in cards:
+        print('adding', front)
+
+        newCard = genanki.Note(
+            model=my_model, 
+            fields=[html.escape(front), html.escape(back)]
+        )
+
+        # add new card to deck
+        my_deck.add_note(newCard)
+    my_package = genanki.Package(my_deck)
+
+    my_package.media_files = ['_hanziWriter.js']
+
+    my_package.write_to_file(f'{deckName}.apkg')

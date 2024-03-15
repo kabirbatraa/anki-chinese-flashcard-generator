@@ -19,6 +19,8 @@ import genanki
 # (because it will have the same id)
 
 # old model id: 1607392319
+# testing 1607392310
+# testing None
 # updating the model id will create a new model (card template)
 
 # how to create a model:
@@ -57,6 +59,7 @@ my_note = genanki.Note(
 
 
 # make a deck
+# old deck id:2059400110
 my_deck = genanki.Deck(2059400110, "Country Capitals")
 
 my_deck.add_note(my_note)
