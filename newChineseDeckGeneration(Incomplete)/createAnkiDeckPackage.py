@@ -216,6 +216,8 @@ my_model = genanki.Model(
 #     model=my_model, 
 #     fields=["Capital of Argentina", "Buenos Aires"]
 # )
+
+allGenAnkiDecks = []
 for deckName in decks.keys():
     deckFullName = f"Chinese::{outerDeckName}::{deckName}"
     deckId = random.randrange(1 << 30, 1 << 31)
@@ -238,8 +240,10 @@ for deckName in decks.keys():
 
         # add new card to deck
         my_deck.add_note(newCard)
-    my_package = genanki.Package(my_deck)
 
-    my_package.media_files = ['_hanziWriter.js']
+    allGenAnkiDecks.append(my_deck)
 
-    my_package.write_to_file(f'{deckFullName.replace("::","-")}.apkg')
+# add all the decks into one package called {outerDeckName}
+my_package = genanki.Package(allGenAnkiDecks)
+my_package.media_files = ['_hanziWriter.js']
+my_package.write_to_file(f'{outerDeckName}.apkg')
