@@ -1,13 +1,17 @@
 
+
 import genanki 
+
 
 # how to escape html:
 # fields=[html.escape(f) for f in ['AT&T was originally called', 'Bell Telephone Company']]
 
+# old model id: 1607392319
+
 
 # how to create a model:
 my_model = genanki.Model(
-    1607392319,
+    1607392310,
     "Simple Model",
     fields=[
         {"name": "Question"},
@@ -20,6 +24,14 @@ my_model = genanki.Model(
             "afmt": '{{FrontSide}}<hr id="answer">{{Answer}}',
         },
     ],
+    css=\
+""".card {
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color: white;
+}"""
 )
 # use a unique model id:
 # import random; random.randrange(1 << 30, 1 << 31)
