@@ -1,16 +1,20 @@
 # anki-chinese-flashcard-generator
 
-Takes in vocab list from chinese class and generates anki deck.
+Takes in a chinese vocab list generates an anki deck package with stroke order animation.
 
-### Features:
+## Features:
 
 - Custom HTML/CSS/Javascript template uses the HanziWriter javascript library to render Chinese flashcards with stroke order.
+  - includes restart button
+  - includes ability to tap the character to restart the animation
+  - includes stroke speed slider (feature in progress)
 - Parses the vocab list text file, downloads HanziWriter stroke order data, and generates the front and back of flashcards (including examples) in a format compatible with my flashcard template.
 - Uses genanki library to package decks of cards into an anki package.
 
-## How to use
+## How to use:
 1. Download this repository.
 2. Add vocab list as a text file into the folder.
+   - You can use the `testList.txt` as an example of a vocab list text file.
 3. Go into `createAnkiDeckPackage.py` and edit the variables up top.
    - `outerDeckName`: will be used to name the deck containing the subdecks
    - `vocabListFileName`: name of the vocab list text file
@@ -18,5 +22,7 @@ Takes in vocab list from chinese class and generates anki deck.
    - Make sure python is installed.
    - You will need to install libraries: requests, genanki, random.
    - use pip install \<library name\>.
-5. That's it! the apkg file will be created for you!
+5. That's it! Running this script will create the apkg file for you!
+
+If you enjoyed using this or have feature requests, feel free to [email me](mailto:kabirbatraa@gmail.com).
 
