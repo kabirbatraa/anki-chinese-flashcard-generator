@@ -147,27 +147,8 @@ for line in vocabListFile:
     if (currentDeckName not in decks): decks[currentDeckName] = []
     decks[currentDeckName].append((front, back))
 
-
-
-
 # decks dictionary
 # each deck should contain a list of tuples: front and back of card
-
-
-
-
-
-
-# def convertTextFileToDeck(textFileName):
-#     open(textFile)
-
-# how to escape html:
-# fields=[html.escape(f) for f in ['AT&T was originally called', 'Bell Telephone Company']]
-
-
-# from anki ?
-# Card ID	1710460837938
-# Note ID	1710460837937
 
 # https://github.com/AnKing-VIP/advanced-browser
 # https://ankiweb.net/shared/info/874215009
@@ -175,6 +156,7 @@ for line in vocabListFile:
 # including the note type id aka model id
 # this will allow me to overwrite the old model on lesson 8
 # (because it will have the same id)
+# nvm this
 
 # old model id: 1607392319
 # updating the model id will create a new model (card template)
