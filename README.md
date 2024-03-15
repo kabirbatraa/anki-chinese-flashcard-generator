@@ -26,3 +26,7 @@ Takes in a chinese vocab list generates an anki deck package with stroke order a
 
 If you enjoyed using this or have feature requests, feel free to [email me](mailto:kabirbatraa@gmail.com).
 
+## Library references:
+- HanziWriter: https://hanziwriter.org/
+- genanki: https://github.com/kerrickstaley/genanki
+
