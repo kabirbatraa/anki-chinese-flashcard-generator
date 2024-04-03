@@ -131,13 +131,18 @@ function initializeButtonState() {
     }
 }
 
+function updateSpeedValueFromSlider(newValue) {
+    console.log(newValue)
+}
+
 
 </script>
 
 
-<!-- <div>
-    imagine a slider here
-</div> -->
+<div class="sliderContainer">
+    <!-- imagine a slider here -->
+    <input type="range" min="0" max="100" step="1" value="50" class="slider" oninput="updateSpeedValueFromSlider(this.value)">
+</div>
 
 <div class="buttonContainer">
     <div id="small" class="changeSizeButton" onclick="small()" style="display:none">小</div>

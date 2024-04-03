@@ -25,9 +25,9 @@
     /* in the flex box */
 
     /* round the corners */
-    border-radius: 25px; 
+    border-radius: 25px;
 
-    
+
 }
 
 .buttonContainer {
@@ -43,7 +43,8 @@
     /* width: 30px; */
     padding: 10px 10px;
     border-radius: 50%;
-    background-color: #5e5e5e; /* same as hanzi stroke card */
+    background-color: #5e5e5e;
+    /* same as hanzi stroke card */
 
     display: flex;
     flex-direction: row;
@@ -54,10 +55,61 @@
 
     cursor: pointer;
 
+    border: 2px solid #222;
+
 
 
 }
 
 .night_mode.changeSizeButton [style*="background-color:"] {
     filter: invert(100%);
+}
+
+/* .night_mode.slider [style*="background-color:"] {
+    filter: invert(100%);
+}
+.night_mode.sliderContainer [style*="background-color:"] {
+    filter: invert(100%);
+} */
+
+.sliderContainer {
+    padding-bottom: 10px;
+    width: 100%;
+    /* text-align: center; */
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 60%;
+    height: 8px;
+    border-radius: 5px;
+    background: #e4e4e4;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #bb86fc;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #bb86fc;
+    cursor: pointer;
 }
