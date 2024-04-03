@@ -136,12 +136,18 @@ function updateSpeedValueFromSlider(newValue) {
     // strokeAnimationSpeed = newValue;
     for (let w of writers) {
         console.log(w)
-        // w._options.strokeAnimationSpeed = parseInt(newValue) // doesnt work
+        w._options.strokeAnimationSpeed = parseInt(newValue) // doesnt work
         // break;
         globalSpeed = newValue
-        w.updateDimensions({width: 80, height: 80})
+        // w.updateDimensions({width: 80, height: 80})
+        // https://github.com/chanind/hanzi-writer/issues/279
+        // w.animateCharacter({onComplete: repeatedlyAnimateCharacter(w)})
     }
 }
+
+// function repeatedlyAnimateCharacter(writer) {
+//     writer.animateCharacter({onComplete: repeatedlyAnimateCharacter})
+// }
 
 
 </script>
