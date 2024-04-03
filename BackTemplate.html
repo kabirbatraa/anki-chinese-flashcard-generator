@@ -44,7 +44,7 @@ function hanziWriterOnload() {
 }
 // drawCharacters();
 
-
+var globalSpeed = 1
 
 function drawCharacters() {
 
@@ -64,7 +64,7 @@ function drawCharacters() {
             height: 80,
             padding: 5,   
             showOutline: true,
-            strokeAnimationSpeed: 1, 
+            strokeAnimationSpeed: globalSpeed, 
             delayBetweenLoops: 500, // default is 2000 ms
             delayBetweenStrokes: 150, // milliseconds
             strokeFadeDuration: 200, // default 400 ms
@@ -133,6 +133,14 @@ function initializeButtonState() {
 
 function updateSpeedValueFromSlider(newValue) {
     console.log(newValue)
+    // strokeAnimationSpeed = newValue;
+    for (let w of writers) {
+        console.log(w)
+        // w._options.strokeAnimationSpeed = parseInt(newValue) // doesnt work
+        // break;
+        globalSpeed = newValue
+        w.updateDimensions({width: 80, height: 80})
+    }
 }
 
 
@@ -141,7 +149,7 @@ function updateSpeedValueFromSlider(newValue) {
 
 <div class="sliderContainer">
     <!-- imagine a slider here -->
-    <input type="range" min="0" max="100" step="1" value="50" class="slider" oninput="updateSpeedValueFromSlider(this.value)">
+    <input type="range" min="0" max="2" value="1" step="any" class="slider" oninput="updateSpeedValueFromSlider(this.value)">
 </div>
 
 <div class="buttonContainer">
