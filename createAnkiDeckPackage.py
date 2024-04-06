@@ -102,7 +102,8 @@ for line in vocabListFile:
         # examplesExist = True
     elif len(vocabTerm) == 3:
         examplesExist = False
-        print("this term seems to not have examples")
+        print("this term seems to not have examples, but it might be an error")
+        errorTermsList.append((hanzi, pinyin))
     else:
         
         print(f"ERROR: len of vocabTerm is {len(vocabTerm)} for word: {hanzi} {pinyin}")
@@ -243,6 +244,6 @@ my_package.write_to_file(f'{outerDeckName.replace("::", " ")} Anki Package.apkg'
 
 print("completed generation of anki package")
 
-print("\nNOTE: terms with errors (they might be missing pinyin or english translation of examples): ")
+print("\nNOTE: terms with errors (they might be missing pinyin, examples, example english translation, or even just a semicolon): ")
 for term in errorTermsList:
     print(term)
