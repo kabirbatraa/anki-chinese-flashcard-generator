@@ -246,4 +246,4 @@ print("completed generation of anki package")
 
 print("\nNOTE: terms with errors (they might be missing pinyin, examples, example english translation, or even just a semicolon): ")
 for term in errorTermsList:
-    print(term)
+    print(f"hanzi: {term[0]}, pinyin: {term[1]}")
