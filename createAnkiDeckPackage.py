@@ -1,8 +1,8 @@
 
 # write the name of the vocab list here: 
 # Example: vocabListFileName = "Lesson 1.txt"
-outerDeckName = "Chinese::Lesson 9"
-vocabListFileName = "L9 Vocab List.docx.txt"
+outerDeckName = "Chinese::Lesson 10"
+vocabListFileName = "L10 Vocab List.txt"
 # note that only txt files work
 
 # import html
@@ -40,6 +40,9 @@ writeToFiles = False
 # new file is created whenever a new section is reached in the file
 ankiDeckFile = None
 currentDeckName = None
+
+# keep track of all terms with errors to print them at the end
+errorTermsList = []
 
 # each line has a new line at the end of it already
 for line in vocabListFile:
@@ -84,6 +87,8 @@ for line in vocabListFile:
 
     # otherwise, this is a vocab term
     vocabTerm = lineParts
+
+    
     
     # print(vocabTerm)
     hanzi = vocabTerm[0]
@@ -91,13 +96,19 @@ for line in vocabListFile:
     pinyin = vocabTerm[1]
     definition = vocabTerm[2]
     examplesExist = True
-    if (len(vocabTerm) == 5):
+    if len(vocabTerm) == 5:
         exampleChinese = vocabTerm[3]
         exampleEnglish = vocabTerm[4] # chinese example translated into english
         # examplesExist = True
-    else:
+    elif len(vocabTerm) == 3:
         examplesExist = False
-        print("this term does not have examples")
+        print("this term seems to not have examples")
+    else:
+        
+        print(f"ERROR: len of vocabTerm is {len(vocabTerm)} for word: {hanzi} {pinyin}")
+        print(f"(This means it might be missing pinyin or examples)")
+        errorTermsList.append(hanzi)
+        
     # print("hanzi:", hanzi)
     # print("pinyin:", pinyin)
 
@@ -229,3 +240,9 @@ for deckName in decks.keys():
 my_package = genanki.Package(allGenAnkiDecks)
 my_package.media_files = ['_hanziWriter.js']
 my_package.write_to_file(f'{outerDeckName.replace("::", " ")} Anki Package.apkg')
+
+print("completed generation of anki package")
+
+print("NOTE: terms with errors: ")
+for term in errorTermsList:
+    print(term)
