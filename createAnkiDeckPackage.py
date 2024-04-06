@@ -73,7 +73,7 @@ for line in vocabListFile:
     if len(lineParts) == 1:
         deckName = lineParts[0]
         # deckName = deckName.replace(' ', ' ') # attempt to replace chinese space with regular space
-        print("New Deck:", deckName)
+        print("NEW DECK:", deckName)
 
         # if we already have a file open, then close it before creating a new file
         if currentDeckName != None:
@@ -92,7 +92,7 @@ for line in vocabListFile:
     
     # print(vocabTerm)
     hanzi = vocabTerm[0]
-    print('downloading data for ', hanzi)
+    print('downloading ', hanzi)
     pinyin = vocabTerm[1]
     definition = vocabTerm[2]
     examplesExist = True
@@ -215,7 +215,7 @@ allGenAnkiDecks = []
 for deckName in decks.keys():
     deckFullName = f"{outerDeckName}::{deckName}"
     deckId = random.randrange(1 << 30, 1 << 31)
-    print("new deck:", deckFullName)
+    print("NEW DECK:", deckFullName)
 
     # create the new deck
     my_deck = genanki.Deck(deckId, deckFullName)
@@ -224,7 +224,7 @@ for deckName in decks.keys():
     cards = decks[deckName]
 
     for front, back in cards:
-        print('adding card to anki package: ', front[0:15] + "..." if len(front) > 15 else "")
+        print('adding to anki: ', front[0:15] + "..." if len(front) > 15 else "")
 
         newCard = genanki.Note(
             model=my_model, 
@@ -247,5 +247,5 @@ print("completed generation of anki package")
 print("\nNOTE: terms with errors (they might be missing pinyin, examples, example english translation, or even just a semicolon): ")
 for term in errorTermsList:
     print(f"hanzi: {term[0]}, pinyin: {term[1]}", end="")
-    if (term[2] == 3): print("this term might simply be missing examples")
+    if (term[2] == 3): print("; note: this term might simply be missing examples")
     else: print()
