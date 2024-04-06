@@ -242,7 +242,7 @@ my_package = genanki.Package(allGenAnkiDecks)
 my_package.media_files = ['_hanziWriter.js']
 my_package.write_to_file(f'{outerDeckName.replace("::", " ")} Anki Package.apkg')
 
-print("completed generation of anki package")
+print("\nCompleted generation of anki package")
 
 print("\nNOTE: terms with errors (they might be missing pinyin, examples, example english translation, or even just a semicolon): ")
 for term in errorTermsList:
