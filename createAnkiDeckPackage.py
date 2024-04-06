@@ -2,7 +2,7 @@
 # write the name of the vocab list here: 
 # Example: vocabListFileName = "Lesson 1.txt"
 outerDeckName = "Chinese::Lesson 10"
-vocabListFileName = "L10 Vocab List.txt"
+vocabListFileName = "L10 Vocab List Updated.txt"
 # note that only txt files work
 
 # import html
@@ -106,8 +106,8 @@ for line in vocabListFile:
     else:
         
         print(f"ERROR: len of vocabTerm is {len(vocabTerm)} for word: {hanzi} {pinyin}")
-        print(f"(This means it might be missing pinyin or examples)")
-        errorTermsList.append(hanzi)
+        print(f"(This means it might be missing pinyin or english translation of examples)")
+        errorTermsList.append((hanzi, pinyin))
         
     # print("hanzi:", hanzi)
     # print("pinyin:", pinyin)
@@ -243,6 +243,6 @@ my_package.write_to_file(f'{outerDeckName.replace("::", " ")} Anki Package.apkg'
 
 print("completed generation of anki package")
 
-print("NOTE: terms with errors: ")
+print("\nNOTE: terms with errors (they might be missing pinyin or english translation of examples): ")
 for term in errorTermsList:
     print(term)
