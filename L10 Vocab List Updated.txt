@@ -41,7 +41,7 @@ Text 2
 让；ràng: to let, to make (someone do something)；让我走，妈妈让我早点儿去，老师让我问问题；let me go, mom asks ,e to go early, teacher lets me ask questions 
 打电话；dǎ diànhuà: make a phone call；给妈妈打电话；call mom
 电话；diànhuà: phone, phone call；电话响了，打一个电话；the phone rings, to make a phone call
-喂；hello (on the phone)；喂，你好！喂，是我。Hello! Hello, it’s me. 
+喂；wèi: hello (on the phone)；喂，你好！喂，是我。; Hello! Hello, it’s me. 
 问好；wènhǎo: to send one’s regards (to someone), to say hello (to someone)；问你妈妈好，跟他问好；to send regards to your mom, to say hello to him
 帮；bāng: to help；请帮我一下，帮我开门；please give me hand, help me open the door
 想；xiǎng: to miss, to think about；想家，想家人，很想你；to miss home, to miss family, miss you very much
@@ -58,12 +58,12 @@ Supplementary
 新年；xīnnián: new year；过新年；to celebrate New Year’s Day
 国庆节；Guóqìng jié: National Day；美国的国庆节是七月四号，中国的国庆节是十月一号; The National Day in the United States is July 4th, and the National Day in China is October 1st.
 清明节；Qīngmíng jié: Qingming Festival, Tomb Sweeping Day；清明节常常是四月五号; Tomb Sweeping Day is usually on April 5th
-劳动节；Láodòng jié: Labor Day；劳动节是五月一号
-端午节；Duānwǔ jié: Dragon Boat Festival；端午节是中国农历(Chinese calendar)五月五号
-儿童节；Értóng jié: Children’s Day；儿童节是六月一号
-情人节；Qíngrén jié: Valentine’s Day；情人节是二月十四号
-中秋节；Zhōngqiū jié: Mid-Autumn Festival；中秋节是中国农历(Chinese calendar)八月十五号
-复活节；Fùhuó jié: Easter；复活节是春分(Spring Equinox)满月(full moon)后的第一个星期天
+劳动节；Láodòng jié: Labor Day；劳动节是五月一号; Labor Day is May 1st
+端午节；Duānwǔ jié: Dragon Boat Festival；端午节是中国农历(Chinese calendar)五月五号; The Dragon Boat Festival falls on the fifth day of the fifth lunar month in the Chinese lunar calendar
+儿童节；Értóng jié: Children’s Day；儿童节是六月一号; Children's Day is June 1st
+情人节；Qíngrén jié: Valentine’s Day；情人节是二月十四号; Valentine's Day is February 14th
+中秋节；Zhōngqiū jié: Mid-Autumn Festival；中秋节是中国农历(Chinese calendar)八月十五号; The Mid-Autumn Festival falls on August 15th in the Chinese calendar
+复活节；Fùhuó jié: Easter；复活节是春分(Spring Equinox)满月(full moon)后的第一个星期天; Easter is the first Sunday after the full moon of the Spring Equinox
 电脑；diànnǎo: computer；电脑科学，电脑工程师，用电脑上网；computer science, computer engineer, use computer to go online
 发；fā: to send；发短信，发邮件；to send text messages, to send emails
 电子邮件；diànzǐ yóujiàn: email；发电子邮件，一封电子邮件；to email, one email
@@ -72,7 +72,7 @@ Supplementary
 祝贺；zhùhè: to congratulate；祝贺你，祝贺你有了新工作；to congratulate you, congratulations on your new job
 轻松；qīngsōng: easy and relaxed；这个工作很轻松，太轻松了；this job is quite easy and relaxed, too easy
 日记；rìjì: diary；写日记，日记本，一篇日记；to write diary, diary (the notebook), one piece of diary
-晴；qíng；今天是晴天；today is sunny
+晴；qíng: clear；今天是晴天；today is sunny
 第一次；dìyīcì: the first time；第一次吃日本菜，第一次来中国；first time eating Japanese food, first time coming to China
 惊喜；jīngxǐ: pleasantly surprised；我很惊喜，一个惊喜；I’m pleasantly surprised, a happy surprise
 通；tōng: to connect；跟朋友通电话；to speak on the phone with friends

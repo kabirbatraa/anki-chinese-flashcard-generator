@@ -92,7 +92,7 @@ for line in vocabListFile:
     
     # print(vocabTerm)
     hanzi = vocabTerm[0]
-    print('adding', hanzi)
+    print('downloading data for ', hanzi)
     pinyin = vocabTerm[1]
     definition = vocabTerm[2]
     examplesExist = True
@@ -103,12 +103,12 @@ for line in vocabListFile:
     elif len(vocabTerm) == 3:
         examplesExist = False
         print("this term seems to not have examples, but it might be an error")
-        errorTermsList.append((hanzi, pinyin))
+        errorTermsList.append((hanzi, pinyin, len(vocabTerm)))
     else:
         
         print(f"ERROR: len of vocabTerm is {len(vocabTerm)} for word: {hanzi} {pinyin}")
         print(f"(This means it might be missing pinyin or english translation of examples)")
-        errorTermsList.append((hanzi, pinyin))
+        errorTermsList.append((hanzi, pinyin, len(vocabTerm)))
         
     # print("hanzi:", hanzi)
     # print("pinyin:", pinyin)
@@ -224,7 +224,7 @@ for deckName in decks.keys():
     cards = decks[deckName]
 
     for front, back in cards:
-        print('adding', front[0:10] + "...")
+        print('adding card to anki package: ', front[0:15] + "..." if len(front) > 15 else "")
 
         newCard = genanki.Note(
             model=my_model, 
@@ -246,4 +246,6 @@ print("completed generation of anki package")
 
 print("\nNOTE: terms with errors (they might be missing pinyin, examples, example english translation, or even just a semicolon): ")
 for term in errorTermsList:
-    print(f"hanzi: {term[0]}, pinyin: {term[1]}")
+    print(f"hanzi: {term[0]}, pinyin: {term[1]}", end="")
+    if (term[2] == 3): print("this term might simply be missing examples")
+    else: print()
